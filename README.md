@@ -1,4 +1,4 @@
-# TesteEstudo
+# Estudo Independente
 Repositório Teste
 
 - This is a study repository
