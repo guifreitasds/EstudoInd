@@ -10,31 +10,24 @@ public class Products {
 		String name;
 		Scanner util = new Scanner(System.in);
 		
-		
+		do {
 		System.out.println("Checagem de Produtos");
 		System.out.println("Insira o nome do seu produto: ");
 		name = util.nextLine();
+		} while(name.isBlank());
 		
-		while(name == "Anyone" ) {
-			System.out.println("Insira um nome: ");
-			name = util.nextLine();
-		}
 		
+		do {
 		System.out.println("Insira o valor do produto: ");
 		value = util.nextDouble();
+		}while(value < 0);
 		
-		while(value < 0) {
-		    System.out.println("Insira um valor válido:  ");
-		    value = util.nextDouble();
-		}
 		
+		do {
 		System.out.println("Insira 1 para produto importado e 2 para produto nacional");
 		local = util.nextDouble();
+		}while(local != 1 && local != 2);
 		
-		while(local != 1 && local != 2) {
-			System.out.println("Insira alguma numeração válida:  ");
-			local = util.nextDouble();
-		}
 		
 		if(local == local1) {
 			finalvalue = (value * cotation);
@@ -46,11 +39,7 @@ public class Products {
 		}
 		else {
 			System.out.println("Insira um valor de local válido!");
-			
 		}
-		
 		util.close();
 	}
-	
-
 }
