@@ -9,7 +9,7 @@ public class Products {
 		double cotation = 5.09;
 		String name;
 		Scanner util = new Scanner(System.in);
-		
+		do {
 		do {
 		System.out.println("Checagem de Produtos");
 		System.out.println("Insira o nome do seu produto: ");
@@ -40,6 +40,7 @@ public class Products {
 		else {
 			System.out.println("Insira um valor de local válido!");
 		}
-		util.close();
-	}
-}
+		
+		
+	}while(value != 0);
+}}
