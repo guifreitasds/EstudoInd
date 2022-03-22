@@ -9,46 +9,26 @@ Original file is located at
 
 # Entrada de Nomes, Idade e Sexo
 
+# Declaração das listas usadas no código
 nomes = []
 idade = []
 genero = []
 
+# começo do loop geral
 while True:
+  # declaraçao de cada entrada de dados
  names = (input('Insira um nome: '))
  age = (input('Insira uma idade: '))
  gender = (input('Insira o gênero: '))
+  # declaraçao de cada append (soma do valor do input como ultimo item da lista indicada)
  nomes.append(names)
  idade.append(age)
  genero.append(gender)
+  # opção de escolha para o usuario
  continue1 = (int(input('Insira 1 para colocar outra pessoa e 2 para parar de colocar pessoas: ')))
+  # uso de estrutura condicional para caso o usuário escolha a não-continuação
  if(continue1 == 2):
     print(nomes) 
     print(idade)
     print(genero)
     break
- elif(continue1 == 1):
-    names = (input('Insira um nome: '))
-    age = (input('Insira uma idade: '))
-    gender = (input('Insira o gênero: '))
-    nomes.append(names)
-    idade.append(age)
-    genero.append(gender)
-    continue2 = (int(input('Insira 1 para colocar outro nome e 2 para parar de colocar nomes: ')))
- if(continue2 == 2):
-   print(nomes)
-   print(idade) 
-   print(genero)
-   break
- elif(continue2 == 1):
-    names = (input('Insira um nome: '))
-    age = (input('Insira uma idade: '))
-    gender = (input('Insira o gênero: '))
-    nomes.append(names)
-    idade.append(age)
-    genero.append(gender)
-    continue2 = (int(input('Insira 1 para colocar outro nome e 2 para parar de colocar nomes: ')))
- if(continue2 == 2):
-   print(nomes) 
-   print(idade) 
-   print(genero)
-   break
