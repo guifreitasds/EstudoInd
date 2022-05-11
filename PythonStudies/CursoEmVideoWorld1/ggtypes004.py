@@ -1,0 +1,10 @@
+n = input('Digite algo: ')
+
+print(type(n))
+print('"{}" É um AlphaNumérico? {}'.format(n, n.isalnum()))
+print('"{}" É do Alfabeto? {}'.format(n, n.isalpha()))
+print('"{}" É um número? {}'.format(n, n.isnumeric()))
+print('"{}" É um número decimal? {}'.format(n, n.isdecimal()))
+print('"{}" Está em maiúsculas? {}'.format(n, n.isupper()))
+print('"{}" Está em minúsculas? {}'.format(n, n.islower()))
+print('"{}" Está capitalizada? {}'.format(n, n.istitle()))
