@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+    <style>
+        body{
+            background-color: rgb(30, 30, 30);
+            font: normal 14pt Arial;
+            text-align: center;
+            color: white;
+        }
+        div{
+            margin-top: 10px;
+            color: white;
+        }
+        input{
+            padding: 5px;
+            border-color: rgb(38, 1, 72);
+            background-color: rgb(34, 1, 65);
+            color: aquamarine;
+        }
+        input#bt{
+            background-color: rgb(34, 1, 65);
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digite sua Nacionalidade</h1>
+    <label for="nac">País: </label>
+    <input type="text" id="nac" placeholder="Digite seu país">
+    <input type="button" name="bt" value="Checar" id="bt" onclick="checar()">
+    <div id="res"></div>
+    <script>
+        var nac = document.getElementById('nac')
+        var res = document.getElementById('res')
+        function checar() {
+            p = String(nac.value)
+            if (p=='Brasil'||p=='brasil'){
+                res.innerHTML = (`Vivendo em ${p}, você é brasileiro! `)
+            }
+            else{
+                res.innerHTML = (`Vivendo em ${p}, você é estrangeiro!`)
+            }
+
+        }
+    </script>
+</body>
+</html>
