@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <section>
+        <div id="yearinput">
+            <label for="year">Ano de nascimento: </label>
+            <input type="number" name="txtyear" id="txtyear">
+        </div>
+        <div id="genderinput">
+            <label for="gender">Sexo: </label>
+            <input type="radio" name="gender" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="gender" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+        <div>
+            <input type="button" value="Verificar" onclick="verificar()">
+            <p>Preencha os dados para ver o resultado</p>
+        </div>
+        <div id="res">
+            <p id="msg"></p>
+            <img id="img" src="" alt="">
+        </div>
+    </section>
+    <footer>
+        &copy; guifreitasds
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
