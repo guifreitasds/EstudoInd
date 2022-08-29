@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 3</title>
+    <meta name="Guilherme" content="Site para inputs">
+</head>
+<body>
+    <form action="mailto:guilhermefsantos9@gmail.com" method="get">
+        <label for="text1">Insira seu nome completo:</label>
+        <input type="text" maxlength="60" required id="text1">
+        <br>
+        <br>
+        <label for="text2">Insira seu Estado de Residência:</label>
+        <input value="SP" type="text" list="ufbr">
+        <datalist id="ufbr">
+            <option>SP</option>
+            <option>PE</option>
+            <option>RJ</option>
+
+        </datalist>
+        <br>
+        <br>
+        <label for="">Select: </label>
+        <input type="radio" name="select" value="one">
+        <input type="radio" name="select" value="two">
+        <input type="radio" name="select" value="three"> 
+        <input type="radio" name="select" value="four"> <!-- Para a não seleção de mais de uma opção, 
+                                                        é necessário utilizar a mesma tag 'name' em todas as opções -->
+        <br>
+        <br>
+        
+        <button autofocus type="submit">Enviar Aqui</button>
+    </form>
+    
+
+    
+    
+</body>
+</html>
