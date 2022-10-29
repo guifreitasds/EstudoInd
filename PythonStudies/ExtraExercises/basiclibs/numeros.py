@@ -38,6 +38,18 @@ def leiaFloat(msg):
         else:
             return n
 
+def leiaFloatNota(msg):
+    while True:
+        try:
+            n = float(input(msg))
+        except:
+            print('\033[31mERRO, digite um número válido\033[m')
+        else:
+            if n > 10:
+                print('\033[31mERRO, digite uma nota de 0 a 10\033[m')
+            else:
+                return n
+
 def average(*n):
     media = sum(n)/len(n)
     return media

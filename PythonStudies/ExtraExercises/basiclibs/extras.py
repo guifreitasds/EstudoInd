@@ -1,3 +1,5 @@
+from basiclibs.numeros import *
+
 def gender(msg):
     while True:
         a = str(input(msg)).strip().upper()[0]
@@ -6,3 +8,11 @@ def gender(msg):
         else:
             return a
 
+def verificarMedia(*n):
+    media = average(*n)
+    if media==10:
+        print(f'\033[32mAluno aprovado com distinção, média {media:.2f}\033[m')
+    elif media>=7:
+        print(f'\033[34mAluno aprovado com média {media:.2f}\033[m')
+    else:
+        print(f'\033[31mAluno reprovado com média {media:.2f}\033[m')
