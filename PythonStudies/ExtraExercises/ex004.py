@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaFloat, average
 
 n1 = leiaFloat('Digita a 1a nota: ')
 n2 = leiaFloat('Digita a 2a nota: ')

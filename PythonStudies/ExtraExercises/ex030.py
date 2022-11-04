@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 dd = leiaInt('Digite o dia: ')
 mm = leiaInt('Digite o mês: ')

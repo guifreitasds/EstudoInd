@@ -1,4 +1,4 @@
-from basiclibs.extras import *
+from basiclibs.extras import gender
 
 x = gender('Digite seu sexo: ')
 

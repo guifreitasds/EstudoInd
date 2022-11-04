@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 h = leiaInt('Quanto você recebe por hora trabalhada? ')
 hd = leiaInt('Quantas horas você trabalha por dia? ')

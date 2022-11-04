@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaFloat
 
 height = leiaFloat('Digite sua altura em metros: ')
 sex = str(input('Digite seu sexo: '))[0]

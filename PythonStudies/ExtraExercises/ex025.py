@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 n1 = leiaInt('Digite um número: ')
 n2 = leiaInt('Digite outro número: ')

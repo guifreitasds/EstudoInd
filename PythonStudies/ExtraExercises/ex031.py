@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 while True:
     n1 = leiaInt("Digite o número (Menor que 1000) a ser lido: ")

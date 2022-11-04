@@ -1,5 +1,5 @@
-from basiclibs.medidas import *
-from basiclibs.numeros import *
+from basiclibs.medidas import area
+from basiclibs.numeros import leiaFloat
 
 print('\033[34mVamos Pintar uma parede!\033[m')
 b = leiaFloat('Digite a largura em metros: ')

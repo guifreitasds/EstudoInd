@@ -1,4 +1,4 @@
-from basiclibs.extras import *
+from basiclibs.extras import leiaFloatNota, verificarMedia
 
 n1 = leiaFloatNota('Digite a 1a nota: ')
 n2 = leiaFloatNota('Digite a 2a nota: ')

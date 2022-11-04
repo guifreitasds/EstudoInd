@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 n1 = leiaInt('Digite o preço do 1o produto: R$')
 n2 = leiaInt('Digite o preço do 2o produto: R$')

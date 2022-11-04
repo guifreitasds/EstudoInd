@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaFloat
 
 exce = leiaFloat('Digite a quantidade de quilos de peixe pescados: ')
 

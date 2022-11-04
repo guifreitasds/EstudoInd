@@ -1,5 +1,5 @@
-from basiclibs.numeros import *
-from basiclibs.medidas import *
+from basiclibs.numeros import leiaFloat
+from basiclibs.medidas import FahtoCelsius
 
 fahr = leiaFloat('Digite uma temperatura em fahrenheit a ser convertida: ')
 

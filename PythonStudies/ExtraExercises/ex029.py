@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 l1 = leiaInt('Digite o primeiro lado: ')
 l2 = leiaInt('Digite o segundo lado: ')

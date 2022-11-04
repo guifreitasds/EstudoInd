@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaFloat
 n1 = leiaFloat('Digite o 1o número: ')
 n2 = leiaFloat('Digite o 2o número: ')
 

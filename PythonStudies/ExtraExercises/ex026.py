@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaFloat
 
 sal = leiaFloat('Digite seu salário: R$')
 percent = 0

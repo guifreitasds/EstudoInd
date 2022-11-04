@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaFloat, leiaInt
 
 h = leiaFloat('Quanto vale a sua hora? R$')
 t = leiaInt('Quantas horas você trabalha por dia? ')

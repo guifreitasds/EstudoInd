@@ -1,5 +1,5 @@
-from basiclibs.numeros import *
-from basiclibs.medidas import *
+from basiclibs.numeros import leiaFloat
+from basiclibs.medidas import squareArea
 
 lado = leiaFloat('Digite o lado do quadrado: ')
 
