@@ -1,4 +1,4 @@
-from basiclibs.numeros import *
+from basiclibs.numeros import leiaInt
 
 notacem=0
 notacinq=0

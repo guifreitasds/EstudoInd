@@ -1,4 +1,4 @@
-from basiclibs.extras import *
+from basiclibs.extras import leiaInt
 
 n1 = leiaInt('Digite o número a ser analisado: ')
 
