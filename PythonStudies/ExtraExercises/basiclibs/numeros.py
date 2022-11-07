@@ -66,3 +66,16 @@ def decimal(num=0):
         return f'{num:.0f} é um número inteiro'
     else:
         return f'{num:.2f} é um número decimal'
+
+def simple_calculator(n1, n2, op=1):
+    if op==1:
+        return n1+n2
+    elif op==2:
+        return n1-n2
+    elif op==3:
+        return n1*n2
+    elif op==4:
+        return n1/n2
+    else:
+        print('\033[31mERRO, digite uma opção válida entre 1 e 4\033[m')
+    
