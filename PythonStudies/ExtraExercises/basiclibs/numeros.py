@@ -53,3 +53,16 @@ def leiaFloatNota(msg):
 def average(*n):
     media = sum(n)/len(n)
     return media
+
+def decimal(num=0):
+    '''
+    Função utilizada para diferenciar um número decimal de um número não decimal
+
+    :param num: número requerido para análise
+    :return: Nesse caso, uma string, mas em outros casos pode ser alterado para true or false
+    '''
+    varalt=f'{num:.2f}'
+    if('.00' in str(varalt)):
+        return f'{num:.0f} é um número inteiro'
+    else:
+        return f'{num:.2f} é um número decimal'
