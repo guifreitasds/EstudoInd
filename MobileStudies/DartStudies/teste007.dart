@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 void main() {
+  //Criação de um JSONMap para passagem para o tipoJson
  Map users = {
    "user1":"Guilherme",
    "user2":"Pedro",
@@ -9,6 +10,6 @@ void main() {
    };
 
   print(users);
-  var result = jsonEncode(users);
+  var result = jsonEncode(users); // Utilização do método encode para passagem do tipo map para JSON válido
   print(result);
 }

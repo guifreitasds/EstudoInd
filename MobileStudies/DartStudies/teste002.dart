@@ -9,6 +9,6 @@ class Funcionario{
   late double salario;
 }
 
-class Gerente extends Funcionario{
+class Gerente extends Funcionario{ // Uso da herança para mostrar que o Gerente herda atributos e métodos de Funcionario
   late bool permission;
 }
