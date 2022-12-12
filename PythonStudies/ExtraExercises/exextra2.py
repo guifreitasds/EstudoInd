@@ -2,11 +2,11 @@
 # Aula Prática: Herança e Polimorfismo
 # Polimorfismo - Code 1
 
-class Animal():
-        def __init__(self, nome, peso):
+class Animal(): # Criando classe animal
+        def __init__(self, nome, peso): # método construtor
           self.__nome = nome
           self.__peso = peso
-        def __str__(self):
+        def __str__(self): # Metodo ToString
             return 'Nome: %s \nPeso: %f' % (self.__nome, self.__peso)
         def __gt__(self, other):
             return self.__peso > other.__peso
