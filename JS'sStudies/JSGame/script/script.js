@@ -2,6 +2,8 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const cloud = document.querySelector('.clouds')
+const pont = document.querySelector('.pontuation')
+var cont = 0;
 
 
 const jump = () =>{
@@ -20,6 +22,7 @@ const loop = setInterval(()=>{
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
     const cloudPosition = +window.getComputedStyle(cloud).right.replace('px', '');
+    pont.innerHTML = cont++;
 
         if(pipePosition<=120 && pipePosition>0 && marioPosition<80){
 
@@ -37,6 +40,7 @@ const loop = setInterval(()=>{
         cloud.style.right = `${cloudPosition}px`;
 
         clearInterval(loop);
+        
     }
 },10);
 
