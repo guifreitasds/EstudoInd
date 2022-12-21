@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Scouts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="line">
+                <th colspan="1">&nbsp;</th>
+                <th class="tbheader">+1.5 Gols</th>
+                <th class="tbheader">+8 Cantos</th>
+                <th class="tbheader">Média de Cantos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="team1" class="desc" onclick="alterar('team1')"></td>
+                <td id="dado1t1" onclick="alterarDado('dado1t1', '1x1', '1y1')">0</td>
+                <td id="dado1t2" onclick="alterarDado('dado1t2', '1x2', '1y2')">0</td>
+                <td id="dado1t3" onclick="alterarDadoM('dado1t3', '1x3', '1y3')">0</td>
+            </tr>
+            <tr>
+                <td id="team2" class="desc" onclick="alterar(id='team2')"></td>
+                <td id="dado2t1" onclick="alterarDado('dado2t1', '2x1', '2y1')">0</td>
+                <td id="dado2t2" onclick="alterarDado('dado2t2', '2x2', '2y2')">0</td>
+                <td id="dado2t3" onclick="alterarDadoM('dado2t3', '2x3', '2y3')">0</td>
+            <tr>
+                <td id="team3" class="desc" onclick="alterar(id='team3')"></td>
+                <td id="dado3t1" onclick="alterarDado('dado3t1', '3x1', '3y1')">0</td>
+                <td id="dado3t2" onclick="alterarDado('dado3t2', '3x2', '3y2')">0</td>
+                <td id="dado3t3" onclick="alterarDadoM('dado3t3', '3x3', '3y3')">0</td>
+            </tr>
+            <tr>
+                <td id="team4" class="desc" onclick="alterar(id='team4')"></td>
+                <td id="dado4t1" onclick="alterarDado('dado4t1', '4x1', '4y1')">0</td>
+                <td id="dado4t2" onclick="alterarDado('dado4t2', '4x2', '4y2')">0</td>
+                <td id="dado4t3" onclick="alterarDadoM('dado4t3', '4x3', '4y3')">0</td>
+            </tr>
+            <tr>
+                <td id="team5" class="desc" onclick="alterar(id='team5')"></td>
+                <td id="dado5t1" onclick="alterarDado('dado5t1', '5x1', '5y1')">0</td>
+                <td id="dado5t2" onclick="alterarDado('dado5t2', '5x2', '5y2')">0</td>
+                <td id="dado5t3" onclick="alterarDadoM('dado5t3', '5x3', '5y3')">0</td>
+            </tr>
+            <tr>
+                <td id="team6" class="desc" onclick="alterar(id='team6')"></td>
+                <td id="dado6t1" onclick="alterarDado('dado6t1', '6x1', '6y1')">0</td>
+                <td id="dado6t2" onclick="alterarDado('dado6t2', '6x2', '6y2')">0</td>
+                <td id="dado6t3" onclick="alterarDadoM('dado6t3', '6x3', '6y3')">0</td>
+            </tr>
+            <tr>
+                <td id="team7" class="desc" onclick="alterar(id='team7')"></td>
+                <td id="dado7t1" onclick="alterarDado('dado7t1')">0</td>
+                <td id="dado7t2" onclick="alterarDado('dado7t2')">0</td>
+                <td id="dado7t3" onclick="alterarDadoM('dado7t3')">0</td>
+            </tr>
+            <tr>
+                <td id="team8" class="desc" onclick="alterar(id='team8')"></td>
+                <td id="dado8t1" onclick="alterarDado('dado8t1')">0</td>
+                <td id="dado8t2" onclick="alterarDado('dado8t2')">0</td>
+                <td id="dado8t3" onclick="alterarDadoM('dado8t3')">0</td>
+            </tr>
+            <tr>
+                <td id="team9" class="desc" onclick="alterar(id='team9')"></td>
+                <td id="dado9t1" onclick="alterarDado('dado9t1')">0</td>
+                <td id="dado9t2" onclick="alterarDado('dado9t2')">0</td>
+                <td id="dado9t3" onclick="alterarDadoM('dado9t3')">0</td>
+            </tr>
+            <tr>
+                <td id="team10" class="desc" onclick="alterar(id='team10')"></td>
+                <td id="dado10t1" onclick="alterarDado('dado10t1')">0</td>
+                <td id="dado10t2" onclick="alterarDado('dado10t2')">0</td>
+                <td id="dado10t3" onclick="alterarDadoM('dado10t3')">0</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <input type="button" value="Carregar" onclick="carregar()">
+    <script src="script.js"></script>
+</body>
+</html>

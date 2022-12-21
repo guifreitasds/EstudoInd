@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 20px;
+    border-color: black;
+    border-style: solid;
+}
+
+.desc{
+    background-color: blue;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: black;
+    color: white;
+}
+.line{
+    border-style: ridge;
+    border-width: 5px;
+    border-color: black;
+}
+.tbheader{
+    margin-right: 5px;
+    padding: 5px;
+
+}
