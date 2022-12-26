@@ -5,3 +5,9 @@ create table if not exists cursos(
     totaulas int unsigned,
     ano year default '2023'
 ) default charset=utf8; 
+
+alter table cursos
+add column idcurso int first; 
+
+alter table cursos 
+add primary key(idcurso);
