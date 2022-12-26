@@ -1,6 +1,4 @@
-INSERT INTO pessoas
-(nome, nascimento, sexo, peso, altura, nacionalidade)
-values
-('Diana', '2004-09-10', 'F', '55.2', '1.66', 'Espanha');
+INSERT INTO pessoas values
+('Alejandro', '1980-11-25', 'M', '75.5', '1.78', 'Argentina');
 
 select * from pessoas;
