@@ -1,4 +1,6 @@
 INSERT INTO pessoas
 (nome, nascimento, sexo, peso, altura, nacionalidade)
 values
-('Adalberto', '2000-12-19', 'M', '98.2', '1.86', 'Brasil');
+('Diana', '2004-09-10', 'F', '55.2', '1.66', 'Espanha');
+
+select * from pessoas;
