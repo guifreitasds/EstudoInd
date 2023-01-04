@@ -12,7 +12,7 @@ values
 ('Cozinha árabe', 'Aprenda a fazer kibe', '40', '30', '2018'),
 ('Youtuber', 'Gerar polêmica e ganhar inscritos', '5', '2', '2018');
 
-select * from cursos;
+select * from people;
 
 update cursos set nome='HTML5' where idcurso ='1';
 

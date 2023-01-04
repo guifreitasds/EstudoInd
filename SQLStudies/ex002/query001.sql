@@ -7,7 +7,9 @@ create table if not exists cursos(
 ) default charset=utf8; 
 
 alter table cursos
-add column idcurso int first; 
+add column idcurso int primary key auto_increment first; 
 
 alter table cursos 
 add primary key(idcurso);
+
+select * from cursos;
