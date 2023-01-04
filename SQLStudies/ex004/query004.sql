@@ -8,3 +8,4 @@ select * from gafanhotos where nacionalidade = 'Brasil' and nome like 'J%' and s
 
 select nome, nacionalidade from gafanhotos where sexo = 'M' and nome like '%Silva%' and nacionalidade <> 'Brasil' and peso < 100;
 
+select max(altura) from gafanhotos where sexo = 'M' and nacionalidade = 'Brasil'; 
