@@ -10,4 +10,8 @@ select nome, nacionalidade from gafanhotos where sexo = 'M' and nome like '%Silv
 
 select max(altura) from gafanhotos where sexo = 'M' and nacionalidade = 'Brasil';
 
-select avg(peso) from gafanhotos; 
+select avg(peso) from gafanhotos;
+
+select min(peso) from gafanhotos where nacionalidade <> 'Brasil' and nascimento between '1990-01-01' and '2000-12-31' and sexo = 'F';
+
+select * from gafanhotos where peso = '35.90' 
