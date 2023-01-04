@@ -9,6 +9,10 @@ select count(*) from cursos;
 select count(*) from cursos 
 where carga > 40;
 
-select max(totaulas) from cursos;
+select nome, max(totaulas) from cursos;
 
-select min(carga) from cursos;
+select nome, min(carga) from cursos;
+
+select sum(totaulas) from cursos where ano = '2016';
+
+select avg(totaulas) from cursos;
