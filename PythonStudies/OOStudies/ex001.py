@@ -4,8 +4,8 @@ class Person:
         self.age = age
 
     def get_details(self):
-        print(f'O nome dessa pessoa é {self.name}')
-        print(f'A idade dessa pessoa é {self.age} anos')
+        print(f'The name of this person is {self.name}')
+        print(f'{self.name} is {self.age} years old')
 
     def greet(self):
         print('Hello, how are you doing?')
