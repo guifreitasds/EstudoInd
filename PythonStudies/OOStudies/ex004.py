@@ -1,5 +1,5 @@
 class Account:
-    def set_details(self, name, balance=0):
+    def __init__(self, name, balance=0):
         self.name=name
         self.balance=balance
 
@@ -20,8 +20,7 @@ while True:
     if (esc == 1):
         x = input('Type your name: ')
         y = float(input('What is your balance? US$'))
-        p1 = Account()
-        p1.set_details(x, y)
+        p1 = Account(x,y)
         break
 
 while True:
@@ -36,8 +35,7 @@ while True:
     if(esc==1):
         x=input('Type your name: ')
         y=float(input('What is your balance?'))
-        p1=Account()
-        p1.set_details(x,y)
+        p1=Account(x,y)
     elif (esc == 2):
         p1.display()
     elif(esc==3):
