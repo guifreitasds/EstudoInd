@@ -13,7 +13,14 @@ class Book:
         print(f"""isbn: {self.isbn}
 title: {self.title}
 price: US${self.price}
-copies: {self.copies}""")
+copies: {self.copies}
+in stock? {self.in_stock()}""")
+
+    def in_stock(self):
+        if self.copies>0:
+            return True
+        else:
+            return False
 
 
 
