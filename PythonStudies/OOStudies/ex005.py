@@ -10,11 +10,13 @@ class Book:
 
 
     def display(self):
-        print(f"""isbn: {self.isbn}
+        print(f"""-=-=-=-=-=BOOK-=-=-=-=-=
+isbn: {self.isbn}
 title: {self.title}
 price: US${self.price}
 copies: {self.copies}
-in stock? {self.in_stock()}""")
+in stock? {self.in_stock()}
+-=-=-=-=-=-=-=-=-=-=-=-=""")
 
     def in_stock(self):
         if self.copies>0:
@@ -36,5 +38,13 @@ book3 = Book('957-7-39-347216-2', 'Learn Maths','John', 'XYZ', 500, 300,5)
 book4 = Book('957-7-39-347216-2', 'Learn Biology','Jack', 'XYZ', 400, 200,6)
 
 
-book1.sell(2)
-book1.display()
+booklist=[book1, book2, book3, book4]
+booksfromjack=[]
+
+for i in booklist:
+    i.display()
+    if i.author=='Jack':
+        booksfromjack.append(i.title)
+
+for i in booksfromjack:
+    print(f'Book writen by Jack: {i}')
