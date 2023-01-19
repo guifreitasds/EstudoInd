@@ -16,7 +16,9 @@ class Fraction:
     def multiply(self, nr1, dr1, nr2, dr2=1):
         numer = nr1*nr2
         denom = dr1*dr2
-        print(f'Fraction solved: {numer}/{denom}')
+        f3=Fraction(numer,denom)
+        print(f'Fraction solved: {f3.display()}')
+
 x = int(input('Type a numerator: '))
 y = int(input('Type a denominator: '))
 z = int(input('Type a numerator: '))
