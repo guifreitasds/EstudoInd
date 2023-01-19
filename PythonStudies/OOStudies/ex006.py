@@ -18,6 +18,7 @@ class Fraction:
         denom = dr1*dr2
         f3=Fraction(numer,denom)
         print(f'Fraction solved: {f3.display()}')
+        return f3
 
 x = int(input('Type a numerator: '))
 y = int(input('Type a denominator: '))
