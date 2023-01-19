@@ -11,14 +11,35 @@ class Fraction:
             self.dr = dr
 
     def display(self):
-        print(f'{self.nr}/{self.dr}')
+        return f'{self.nr}/{self.dr}'
+
+    def add(self, nr1, dr1, nr2, dr2=1):
+        numer = (nr1*dr2+nr2*dr1)
+        denom = dr1*dr2
+        f4 = Fraction(numer, denom)
+        print(f'Fraction solved: {f4.display()}')
+        return f4
+
+    def addanotherform(self, f1,f2):
+        numer = (f1.nr*f2.dr)+(f1.dr*f2.nr)
+        denom = f1.dr*f2.dr
+        f4 = Fraction(numer, denom)
+        print(f'Fraction solved: {f4.display()}')
+        return f4
     
     def multiply(self, nr1, dr1, nr2, dr2=1):
         numer = nr1*nr2
         denom = dr1*dr2
-        f3=Fraction(numer,denom)
-        print(f'Fraction solved: {f3.display()}')
-        return f3
+        f = Fraction(numer,denom)
+        print(f'Fraction solved: {f.display()}')
+        return f
+
+    def multiplyanotherform(self, f1, f2):
+        numer = f1.nr*f2.nr
+        denom = f1.dr*f2.dr
+        f = Fraction(numer,denom)
+        print(f'Fraction solved: {f.display()}')
+        return f
 
 x = int(input('Type a numerator: '))
 y = int(input('Type a denominator: '))
@@ -27,5 +48,7 @@ a = int(input('Type a denominator: '))
 
 f1 = Fraction(x,y)
 f2 = Fraction(z, a)
-f1.display()
-f1.multiply(f1.nr,f1.dr, f2.nr, f2.dr)
+print(f1.display())
+f1.multiplyanotherform(f1,f2)
+f1.add(f1.nr,f1.dr, f2.nr,f2.dr)
+f1.addanotherform(f1,f2)
