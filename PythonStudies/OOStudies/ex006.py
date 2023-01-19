@@ -15,6 +15,8 @@ class Fraction:
 
 
     def add(self,f2):
+        if type(f2)==int:
+            f2 = Fraction(f2)
         numer = (self.nr*f2.dr)+(self.dr*f2.nr)
         denom = self.dr*f2.dr
         f4 = Fraction(numer, denom)
@@ -40,5 +42,4 @@ f1 = Fraction(x,y)
 f2 = Fraction(z, a)
 print(f1.display())
 f1.multiply(5)
-f1.add(f1.nr,f1.dr, f2.nr,f2.dr)
-f1.addanotherform(f1,f2)
+f1.add(f2)
