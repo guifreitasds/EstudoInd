@@ -11,7 +11,7 @@ class Fraction:
             self.dr = dr
 
     def show(self):
-        return f'{self.nr}/{self.dr}'
+        return f'{self.nr}/{self.dr} and reduced= {self.nr/self.hcf(self.nr, self.dr):.0f}/{self.dr/self.hcf(self.nr,self.dr):.0f}'
 
 
     def add(self,f2):
@@ -33,10 +33,17 @@ class Fraction:
         print(f'Fraction solved: {f.show()}')
         return f
 
-x = int(input('Type a numerator: '))
-y = int(input('Type a denominator: '))
-z = int(input('Type a numerator: '))
-a = int(input('Type a denominator: '))
+    @staticmethod
+    def hcf(x, y):
+        x = abs(x)
+        y = abs(y)
+        smaller = y if x > y else x
+        s = smaller
+        while s > 0:
+            if x % s == 0 and y % s == 0:
+                break
+            s -= 1
+        return s
 
 
 
@@ -52,3 +59,4 @@ f3 = f1.add(5)
 print(f3.show())
 f3 = f1.multiply(5)
 print(f3.show())
+print(f1.hcf(2,3))
