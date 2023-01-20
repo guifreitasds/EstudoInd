@@ -1,13 +1,20 @@
 class Employee:
-    domains=set()
     allowed_domains = {'yahoo.com', 'gmail.com', 'outlook.com'}
     def __init__(self, name, email):
         self.name = name
-        if email[email.index('@')+1:] in Employee.allowed_domains:
-            self.email = email
+        self._email = email
+
+    @property
+    def email(self):
+        return self.email
+
+    @email.setter
+    def email(self, new):
+        domain = new[new.index('@') + 1:]
+        if domain in Employee.allowed_domains:
+            self._email = new
         else:
             raise RuntimeError()
-        Employee.domains.add(self.email[self.email.index('@'):])
 
 
     def display(self):
@@ -21,6 +28,3 @@ e4 = Employee('Ted', 'ted@yahoo.com')
 e5 = Employee('Tim', 'tim@gmail.com')
 e6 = Employee('Mike', 'mike@yahoo.com')
 
-
-
-print(Employee.domains)

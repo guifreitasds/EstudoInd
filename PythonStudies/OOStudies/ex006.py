@@ -1,17 +1,13 @@
 class Fraction:
     def __init__(self, nr, dr=1):
-        if nr<0 and dr<0:
-            self.nr = nr * -1
-            self.dr = dr * -1
-        elif nr>0 and dr<0:
-            self.nr = nr * -1
-            self.dr = dr * -1
-        else:
-            self.nr = nr
-            self.dr = dr
+        self.nr = nr
+        self.dr = dr
+        if self.dr < 0:
+            self.nr *= -1
+            self.dr *= -1
 
     def show(self):
-        return f'{self.nr}/{self.dr} and reduced= {self.nr/self.hcf(self.nr, self.dr):.0f}/{self.dr/self.hcf(self.nr,self.dr):.0f}'
+        return f'{self.nr}/{self.dr} and reduced = {self.nr/Fraction.hcf(self.nr,self.dr):.0f}/{self.dr/Fraction.hcf(self.nr,self.dr):.0f}'
 
 
     def add(self,f2):
