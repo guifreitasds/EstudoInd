@@ -29,7 +29,7 @@ class Fraction:
         return f4
 
 
-    def mul(self, f2):
+    def __mul__(self, f2):
         if type(f2)==int:
             f2 = Fraction(f2)
         numer = self.nr*f2.nr
@@ -58,4 +58,7 @@ f3 = f1+f2
 f3.show()
 
 f3 = f1-f2
+f3.show()
+
+f3 = f1*f2
 f3.show()
