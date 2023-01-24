@@ -38,6 +38,11 @@ class Fraction:
         print(f'Fraction solved: {f.show()}')
         return f
 
+    def __eq__(self, other):
+        return (self.nr*other.dr)==(self.dr*other.nr)
+    def __ne__(self, other):
+        return (self.nr*other.dr)!=(self.dr*other.nr)
+
     @staticmethod
     def hcf(x, y):
         x = abs(x)
@@ -53,12 +58,12 @@ class Fraction:
 
 
 f1 = Fraction(2,3)
-f2 = Fraction(3,4)
+f2 = Fraction(2,3)
 f3 = f1+f2
 f3.show()
 
-f3 = f1-f2
-f3.show()
 
 f3 = f1*f2
 f3.show()
+
+print(f1==f2, f1!=f2)
