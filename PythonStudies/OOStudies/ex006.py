@@ -9,6 +9,8 @@ class Fraction:
     def __str__(self):
         return f'{self.nr}/{self.dr} and reduced = {self.nr/Fraction.hcf(self.nr,self.dr):.0f}/{self.dr/Fraction.hcf(self.nr,self.dr):.0f}'
 
+    def __repr__(self):
+        return f'Fraction({self.nr}/{self.dr})'
 
     def __add__(self,f2):
         if type(f2)==int:
@@ -66,5 +68,6 @@ print(f3)
 
 f3 = f1*f2
 print(f3)
+
 
 print(f1==f2, f1!=f2)
