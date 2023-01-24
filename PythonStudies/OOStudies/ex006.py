@@ -42,6 +42,10 @@ class Fraction:
         return (self.nr*other.dr)==(self.dr*other.nr)
     def __ne__(self, other):
         return (self.nr*other.dr)!=(self.dr*other.nr)
+    def __lt__(self, other):
+        return (self.nr * other.dr) < (self.dr * other.nr)
+    def __le__(self, other):
+        return (self.nr * other.dr) <= (self.dr * other.nr)
 
     @staticmethod
     def hcf(x, y):
