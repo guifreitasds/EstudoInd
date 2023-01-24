@@ -6,7 +6,7 @@ class Fraction:
             self.nr *= -1
             self.dr *= -1
 
-    def show(self):
+    def __str__(self):
         return f'{self.nr}/{self.dr} and reduced = {self.nr/Fraction.hcf(self.nr,self.dr):.0f}/{self.dr/Fraction.hcf(self.nr,self.dr):.0f}'
 
 
@@ -16,7 +16,6 @@ class Fraction:
         numer = (self.nr*f2.dr)+(self.dr*f2.nr)
         denom = self.dr*f2.dr
         f4 = Fraction(numer, denom)
-        print(f'Fraction solved: {f4.show()}')
         return f4
 
     def __sub__(self,f2):
@@ -25,7 +24,6 @@ class Fraction:
         numer = (self.nr*f2.dr)-(self.dr*f2.nr)
         denom = self.dr*f2.dr
         f4 = Fraction(numer, denom)
-        print(f'Fraction solved: {f4.show()}')
         return f4
 
 
@@ -35,7 +33,6 @@ class Fraction:
         numer = self.nr*f2.nr
         denom = self.dr*f2.dr
         f = Fraction(numer,denom)
-        print(f'Fraction solved: {f.show()}')
         return f
 
     def __eq__(self, other):
@@ -64,10 +61,10 @@ class Fraction:
 f1 = Fraction(2,3)
 f2 = Fraction(2,3)
 f3 = f1+f2
-f3.show()
+print(f3)
 
 
 f3 = f1*f2
-f3.show()
+print(f3)
 
 print(f1==f2, f1!=f2)
