@@ -10,7 +10,7 @@ class Fraction:
         return f'{self.nr}/{self.dr} and reduced = {self.nr/Fraction.hcf(self.nr,self.dr):.0f}/{self.dr/Fraction.hcf(self.nr,self.dr):.0f}'
 
 
-    def add(self,f2):
+    def __add__(self,f2):
         if type(f2)==int:
             f2 = Fraction(f2)
         numer = (self.nr*f2.dr)+(self.dr*f2.nr)
@@ -44,15 +44,6 @@ class Fraction:
 
 
 f1 = Fraction(2,3)
-print(f1.show())
 f2 = Fraction(3,4)
-print(f2.show())
-f3 = f1.multiply(f2)
-print(f3.show())
-f3 = f1.add(f2)
-print(f3.show())
-f3 = f1.add(5)
-print(f3.show())
-f3 = f1.multiply(5)
-print(f3.show())
-print(f1.hcf(2,3))
+f3 = f1+f2
+f3.show()
