@@ -20,6 +20,9 @@ class Fraction:
         f4 = Fraction(numer, denom)
         return f4
 
+    def __radd__(self, other):
+        return self.__add__(other)
+
     def __sub__(self,f2):
         if type(f2)==int:
             f2 = Fraction(f2)
@@ -62,7 +65,7 @@ class Fraction:
 
 f1 = Fraction(2,3)
 f2 = Fraction(2,3)
-f3 = f1+f2
+f3 = 3+f1
 print(f3)
 
 
