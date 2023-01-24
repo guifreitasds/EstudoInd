@@ -19,8 +19,17 @@ class Fraction:
         print(f'Fraction solved: {f4.show()}')
         return f4
 
+    def __sub__(self,f2):
+        if type(f2)==int:
+            f2 = Fraction(f2)
+        numer = (self.nr*f2.dr)-(self.dr*f2.nr)
+        denom = self.dr*f2.dr
+        f4 = Fraction(numer, denom)
+        print(f'Fraction solved: {f4.show()}')
+        return f4
 
-    def multiply(self, f2):
+
+    def mul(self, f2):
         if type(f2)==int:
             f2 = Fraction(f2)
         numer = self.nr*f2.nr
@@ -46,4 +55,7 @@ class Fraction:
 f1 = Fraction(2,3)
 f2 = Fraction(3,4)
 f3 = f1+f2
+f3.show()
+
+f3 = f1-f2
 f3.show()
