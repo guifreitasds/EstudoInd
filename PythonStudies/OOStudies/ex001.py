@@ -23,7 +23,8 @@ class Employee(Person):
         self.rg=rg
 
     def get_details(self):
-        print(f'Rg: {self.rg} // Employee: {self.name} // Salary: US${self.salary}')
+        super().get_details()
+        print(f'Rg: {self.rg} // Salary: US${self.salary}')
 
 
 p1=Person("Jorge", 25)
