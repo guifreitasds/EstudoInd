@@ -7,8 +7,14 @@ class Person:
         print(f'The name of this person is {self.name}')
         print(f'{self.name} is {self.age} years old')
 
+    def is_adult(self):
+        if self.age >= 18:
+            return True
+        else:
+            return False
+
     def greet(self):
-        print('Hello, how are you doing?')
+        print(f'Hello, i am {self.name}, how are you doing?')
 
 
 p1=Person()
