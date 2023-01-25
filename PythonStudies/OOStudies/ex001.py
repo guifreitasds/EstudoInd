@@ -1,5 +1,5 @@
 class Person:
-    def set_details(self, name, age):
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 
@@ -16,8 +16,11 @@ class Person:
     def greet(self):
         print(f'Hello, i am {self.name}, how are you doing?')
 
+class Employee(Person):
+    pass
 
 p1=Person()
+
 
 
 p1.set_details("Jorge", 25)
