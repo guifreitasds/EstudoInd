@@ -13,7 +13,7 @@ class Length:
         i = self.inches + L.inches
         if i >= 12:
             i = i - 12
-        f += 1
+            f += 1
         return Length(f, i)
 
     def __radd__(self, other):
