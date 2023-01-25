@@ -19,10 +19,10 @@ class Person:
 class Employee(Person):
     pass
 
-p1=Person()
+p1=Person("Jorge", 25)
+e1=Employee("Carlos", 19)
 
-
-
-p1.set_details("Jorge", 25)
 p1.get_details()
+e1.greet()
+e1.get_details()
 
