@@ -9,11 +9,11 @@ class Course:
         self.avg_rating=0
 
     def __str__(self):
-        print(f"""{self.title}
+        return f"""{self.title}
 Instructor: {self.instructor}
 Rating: {self.avg_rating}
 Price: US${self.price}
-""")
+"""
 
     def new_user(self, new):
         self.users.append(new)
@@ -37,5 +37,13 @@ class PdfCourse(Course):
     def __init__(self, title, instructor, price, lectures, pages):
         super().__init__(title, instructor, price, lectures)
         self.pages=pages
+
+c1 = Course('PHP', 'Guilherme', 10, 20)
+
+c1.receive_rating(9)
+c1.receive_rating(10)
+c1.receive_rating(5)
+c1.receive_rating(7)
+print(c1)
 
 
