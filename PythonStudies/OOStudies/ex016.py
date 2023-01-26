@@ -9,7 +9,7 @@ class Course:
         self.avg_rating=0
 
     def __str__(self):
-        return f"""{self.title}
+        return f"""{self.title} Course
 Instructor: {self.instructor}
 Rating: {self.avg_rating}
 Price: US${self.price}
