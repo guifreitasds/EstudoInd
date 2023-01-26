@@ -11,7 +11,7 @@ class Course:
     def __str__(self):
         return f"""{self.title} Course
 Instructor: {self.instructor}
-Rating: {self.avg_rating}
+Rating: {self.avg_rating:.2f}
 Price: US${self.price}
 """
 
@@ -24,7 +24,7 @@ Price: US${self.price}
 
     def show_details(self):
         print(f"""{self.lectures} Lectures
-{self.users.length()} Users 
+{len(self.users)} Users 
 """)
 
 class VideoCourse(Course):
@@ -40,10 +40,13 @@ class PdfCourse(Course):
 
 c1 = Course('PHP', 'Guilherme', 10, 20)
 
-c1.receive_rating(9)
+c1.new_user('Carlos')
 c1.receive_rating(10)
+c1.new_user('Vitor')
 c1.receive_rating(5)
+c1.new_user('Cláudia')
 c1.receive_rating(7)
 print(c1)
+c1.show_details()
 
 
