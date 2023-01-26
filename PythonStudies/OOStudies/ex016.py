@@ -1,12 +1,12 @@
 class Course:
-    def __init__(self, title, instructor, price, lectures, users, ratings, avg_rating):
+    def __init__(self, title, instructor, price, lectures):
         self.title=title
         self.instructor=instructor
         self.price=price
         self.lectures=lectures
-        self.users=users
-        self.ratings=ratings
-        self.avg_rating=avg_rating
+        self.users=[]
+        self.ratings=0
+        self.avg_rating=0
 
     def __str__(self):
         print(f"""{self.title}
@@ -19,7 +19,8 @@ Price: US${self.price}
         self.users.append(new)
 
     def receive_rating(self, val):
-        self.ratings.append(val)
+        self.avg_rating=(self.avg_rating*self.ratings+val)/(self.ratings+1)
+        self.ratings+=1
 
     def show_details(self):
         print(f"""{self.lectures} Lectures
@@ -27,14 +28,14 @@ Price: US${self.price}
 """)
 
 class VideoCourse(Course):
-    def __init__(self, title, instructor, price, lectures, users, ratings, avg_rating, leng):
-        super().__init__(title, instructor, price, lectures, users, ratings, avg_rating)
+    def __init__(self, title, instructor, price, lectures,leng):
+        super().__init__(title, instructor, price, lectures)
         self.length_video=leng
 
 
 class PdfCourse(Course):
-    def __init__(self, title, instructor, price, lectures, users, ratings, avg_rating, pages):
-        super().__init__(title, instructor, price, lectures, users, ratings, avg_rating)
+    def __init__(self, title, instructor, price, lectures, pages):
+        super().__init__(title, instructor, price, lectures)
         self.pages=pages
 
 
