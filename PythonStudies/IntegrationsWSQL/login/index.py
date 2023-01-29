@@ -1,6 +1,7 @@
 #Importar Libs
 from tkinter import *
 from tkinter import messagebox
+from tkinter import ttk
 
 #CRIANDO JANELA
 
@@ -24,7 +25,19 @@ rightframe.pack(side=RIGHT)
 logolabel=Label(leftframe, image=logo, bg="MIDNIGHTBLUE")
 logolabel.place(x=50, y=100)
 
-user=Label(rightframe, text="Username", font=("Century Gothic", 18), bg="MIDNIGHTBLUE", fg="white")
+
+# Colocando o input de username
+user=Label(rightframe, text="Username: ", font=("Century Gothic", 18), bg="MIDNIGHTBLUE", fg="white")
 user.place(x=10, y=100)
+
+userinput=ttk.Entry(rightframe, width=30)
+userinput.place(x=150, y=110)
+
+# Colocando o input de password
+passw=Label(rightframe, text="Password: ", font=("Century Gothic", 18), bg="MIDNIGHTBLUE", fg="white")
+passw.place(x=10, y=140)
+
+passinput=ttk.Entry(rightframe, width=30)
+passinput.place(x=150, y=150)
 
 win.mainloop()
