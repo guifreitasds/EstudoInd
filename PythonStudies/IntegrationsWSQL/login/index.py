@@ -40,4 +40,9 @@ passw.place(x=10, y=140)
 passinput=ttk.Entry(rightframe, width=30)
 passinput.place(x=150, y=150)
 
+#Botão Login
+
+logbutton=Button(rightframe, text="Login", width=20)
+logbutton.place(x=120, y=210)
+
 win.mainloop()
