@@ -45,4 +45,9 @@ passinput.place(x=150, y=150)
 logbutton=Button(rightframe, text="Login", width=20)
 logbutton.place(x=120, y=210)
 
+# Botão Register
+
+regbutton=Button(rightframe, text="Register",width=20)
+regbutton.place(x=120, y=240)
+
 win.mainloop()
