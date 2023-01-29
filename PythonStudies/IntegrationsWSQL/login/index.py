@@ -11,6 +11,9 @@ win.geometry("600x300")
 win.configure(background="white")
 win.resizable(width=False, height=False)
 
+#Adicionando transparência
+win.attributes("-alpha", 0.95)
+
 
 # CARREGANDO IMAGENS #
 logo=PhotoImage(file="icons/logo.png")
@@ -42,12 +45,12 @@ passinput.place(x=150, y=150)
 
 #Botão Login
 
-logbutton=Button(rightframe, text="Login", width=20)
-logbutton.place(x=120, y=210)
+logbutton=ttk.Button(rightframe, text="Login", width=20)
+logbutton.place(x=120, y=200)
 
 # Botão Register
 
-regbutton=Button(rightframe, text="Register",width=20)
-regbutton.place(x=120, y=240)
+regbutton=ttk.Button(rightframe, text="Register",width=15)
+regbutton.place(x=135, y=230)
 
 win.mainloop()
