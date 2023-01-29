@@ -24,4 +24,7 @@ rightframe.pack(side=RIGHT)
 logolabel=Label(leftframe, image=logo, bg="MIDNIGHTBLUE")
 logolabel.place(x=50, y=100)
 
+user=Label(rightframe, text="Username", font=("Century Gothic", 18), bg="MIDNIGHTBLUE", fg="white")
+user.place(x=10, y=100)
+
 win.mainloop()
