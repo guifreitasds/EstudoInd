@@ -55,33 +55,48 @@ def register():
     #Remover botões de página de login
     logbutton.place(x=5000)
     regbutton.place(x=5000)
-    user.place(x=5000)
-    userinput.place(x=5000)
-    passw.place(x=5000)
-    passinput.place(x=5000)
+
 
     #Inserir botões de cadastro
     #Label do nome
     name=Label(rightframe, text="Name: ", font=("Century Gothic", 18), bg="MIDNIGHT BLUE", fg="white")
-    name.place(x=10, y=20)
+    name.place(x=10, y=30)
     #
     #Input do nome
-    nameinput=ttk.Entry(rightframe, width=30)
-    nameinput.place(x=100, y=30)
+    nameinput=ttk.Entry(rightframe, width=38)
+    nameinput.place(x=100, y=40)
     #
 
     #Label do e-mail
     mail=Label(rightframe, text="E-mail: ", font=("Century Gothic", 18),bg="MIDNIGHT BLUE", fg="white")
-    mail.place(x=10, y=55)
+    mail.place(x=10, y=65)
+    #
 
     #Input do e-mail
-    mailinput=ttk.Entry(rightframe, width=30)
-    mailinput.place(x=100, y=65)
+    mailinput=ttk.Entry(rightframe, width=38)
+    mailinput.place(x=100, y=75)
+    #
 
     #Botões da página de registro
     regbutton_inregpage=ttk.Button(rightframe, text="Register", width=20)
     regbutton_inregpage.place(x=120, y=220)
-    backbutton=ttk.Button(rightframe, text="Go back", width=15)
+    #
+    
+
+    def go_back():
+        #Removendo widgets de cadastro
+        name.place(x=5000)
+        nameinput.place(x=5000)
+        mail.place(x=5000)
+        mailinput.place(x=5000)
+        backbutton.place(x=5000)
+        regbutton_inregpage.place(x=5000)
+
+        #Voltando com a tela de login
+        logbutton.place(x=120, y=200)
+        regbutton.place(x=135, y=230)
+    
+    backbutton=ttk.Button(rightframe, text="Go back", width=15, command=go_back)
     backbutton.place(x=135,y=250)
 
 # Botão Register
