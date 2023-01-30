@@ -63,12 +63,20 @@ def register():
     #Inserir botões de cadastro
     #Label do nome
     name=Label(rightframe, text="Name: ", font=("Century Gothic", 18), bg="MIDNIGHT BLUE", fg="white")
-    name.place(x=10, y=35)
+    name.place(x=10, y=20)
     #
     #Input do nome
     nameinput=ttk.Entry(rightframe, width=30)
-    nameinput.place(x=100, y=46)
+    nameinput.place(x=100, y=30)
     #
+
+    #Label do e-mail
+    mail=Label(rightframe, text="E-mail: ", font=("Century Gothic", 18),bg="MIDNIGHT BLUE", fg="white")
+    mail.place(x=10, y=55)
+
+    #Input do e-mail
+    mailinput=ttk.Entry(rightframe, width=30)
+    mailinput.place(x=100, y=65)
 
     #Botões da página de registro
     regbutton_inregpage=ttk.Button(rightframe, text="Register", width=20)
