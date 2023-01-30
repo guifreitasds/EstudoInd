@@ -55,8 +55,22 @@ def register():
     #Remover botões de página de login
     logbutton.place(x=5000)
     regbutton.place(x=5000)
+    user.place(x=5000)
+    userinput.place(x=5000)
+    passw.place(x=5000)
+    passinput.place(x=5000)
 
     #Inserir botões de cadastro
+    #Label do nome
+    name=Label(rightframe, text="Name: ", font=("Century Gothic", 18), bg="MIDNIGHT BLUE", fg="white")
+    name.place(x=10, y=35)
+    #
+    #Input do nome
+    nameinput=ttk.Entry(rightframe, width=30)
+    nameinput.place(x=100, y=46)
+    #
+
+    #Botões da página de registro
     regbutton_inregpage=ttk.Button(rightframe, text="Register", width=20)
     regbutton_inregpage.place(x=120, y=220)
     backbutton=ttk.Button(rightframe, text="Go back", width=15)
