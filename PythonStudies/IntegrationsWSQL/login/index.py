@@ -10,6 +10,7 @@ win.title('DP SYSTEMS - Login - Acess Panel')
 win.geometry("600x300")
 win.configure(background="white")
 win.resizable(width=False, height=False)
+win.iconbitmap(default="icons/LogoIcon.ico")
 
 #Adicionando transparência
 win.attributes("-alpha", 0.95)
@@ -40,7 +41,7 @@ userinput.place(x=150, y=110)
 passw=Label(rightframe, text="Password: ", font=("Century Gothic", 18), bg="MIDNIGHTBLUE", fg="white")
 passw.place(x=10, y=140)
 
-passinput=ttk.Entry(rightframe, width=30)
+passinput=ttk.Entry(rightframe, width=30, show="•")
 passinput.place(x=150, y=150)
 
 #Botão Login
@@ -48,9 +49,22 @@ passinput.place(x=150, y=150)
 logbutton=ttk.Button(rightframe, text="Login", width=20)
 logbutton.place(x=120, y=200)
 
+# Funções
+
+def register():
+    #Remover botões de página de login
+    logbutton.place(x=5000)
+    regbutton.place(x=5000)
+
+    #Inserir botões de cadastro
+    regbutton_inregpage=ttk.Button(rightframe, text="Register", width=20)
+    regbutton_inregpage.place(x=120, y=220)
+    backbutton=ttk.Button(rightframe, text="Go back", width=15)
+    backbutton.place(x=135,y=250)
+
 # Botão Register
 
-regbutton=ttk.Button(rightframe, text="Register",width=15)
+regbutton=ttk.Button(rightframe, text="Register",width=15, command=register)
 regbutton.place(x=135, y=230)
 
 win.mainloop()
