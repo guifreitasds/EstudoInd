@@ -6,11 +6,11 @@ cursor = conn.cursor()
 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS users(
-    id integer AUTOINCREMENT NOT NULL,
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT ,
     name varchar(40) NOT NULL,
     mail text NOT NULL,
     username varchar(20) NOT NULL,
-    password varchar(30) NOT NULL,
-    PRIMARY KEY(id)
+    password varchar(30) NOT NULL
 );
 """)
+
