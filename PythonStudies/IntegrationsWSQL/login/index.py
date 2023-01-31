@@ -2,6 +2,7 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
+import databaser
 
 #CRIANDO JANELA
 
@@ -51,7 +52,7 @@ logbutton.place(x=120, y=200)
 
 # Funções
 
-def register():
+def register_page():
     #Remover botões de página de login
     logbutton.place(x=5000)
     regbutton.place(x=5000)
@@ -77,8 +78,24 @@ def register():
     mailinput.place(x=100, y=75)
     #
 
+    #Função de registrar na base de dados
+    def register_intodb():
+        #Pegando valores das entrys do tkinter
+        name=nameinput.get()
+        mail=mailinput.get()
+        username=userinput.get()
+        passw=passinput.get()
+
+        #Fazendo comandos SQL para inserção de dados
+        databaser.cursor.execute("""
+        INSERT INTO users(name, mail, username, password)
+        VALUES(?, ?, ?, ?)""", (name, mail, username, passw))
+        databaser.conn.commit()
+        messagebox.showinfo(title="REGISTER INFO", message="Register sucessfull")
+
+
     #Botões da página de registro
-    regbutton_inregpage=ttk.Button(rightframe, text="Register", width=20)
+    regbutton_inregpage=ttk.Button(rightframe, text="Register", width=20, command=register_intodb)
     regbutton_inregpage.place(x=120, y=220)
     #
     
@@ -99,9 +116,11 @@ def register():
     backbutton=ttk.Button(rightframe, text="Go back", width=15, command=go_back)
     backbutton.place(x=135,y=250)
 
+
 # Botão Register
 
-regbutton=ttk.Button(rightframe, text="Register",width=15, command=register)
+regbutton=ttk.Button(rightframe, text="Register",width=15, command=register_page)
 regbutton.place(x=135, y=230)
+
 
 win.mainloop()
