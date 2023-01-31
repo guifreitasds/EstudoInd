@@ -45,12 +45,27 @@ passw.place(x=10, y=140)
 passinput=ttk.Entry(rightframe, width=30, show="•")
 passinput.place(x=150, y=150)
 
+
+def login_intosys():
+    databaser.cursor.execute("""
+    SELECT * FROM users
+    WHERE (username=? and password=?)""", (userinput.get(), passinput.get()))
+    verify=databaser.cursor.fetchone()
+    try:
+        if(userinput.get() in verify and passinput.get() in verify):
+            messagebox.showinfo(title="Login INFO", message="Login sucessfull, Welcome!")
+    except:
+        messagebox.showerror(title="LoginERROR", message="Incorrect Credentials")
+
+
 #Botão Login
 
-logbutton=ttk.Button(rightframe, text="Login", width=20)
+logbutton=ttk.Button(rightframe, text="Login", width=20, command=login_intosys)
 logbutton.place(x=120, y=200)
 
 # Funções
+
+
 
 def register_page():
     #Remover botões de página de login
@@ -86,12 +101,15 @@ def register_page():
         username=userinput.get()
         passw=passinput.get()
 
-        #Fazendo comandos SQL para inserção de dados
-        databaser.cursor.execute("""
-        INSERT INTO users(name, mail, username, password)
-        VALUES(?, ?, ?, ?)""", (name, mail, username, passw))
-        databaser.conn.commit()
-        messagebox.showinfo(title="REGISTER INFO", message="Register sucessfull")
+        if(name=="" and mail=="" and username=="" and passw=="" or name=="" and mail==""):
+            messagebox.showerror(title="INSERTION DATA ERROR", message="Insert all the fields in this page")
+        else:
+            #Fazendo comandos SQL para inserção de dados
+            databaser.cursor.execute("""
+            INSERT INTO users(name, mail, username, password)
+            VALUES(?, ?, ?, ?)""", (name, mail, username, passw))
+            databaser.conn.commit()
+            messagebox.showinfo(title="REGISTER INFO", message="Register sucessfull")
 
 
     #Botões da página de registro
