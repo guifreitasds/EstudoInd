@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arlindão da Galera</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: pink;
+
+    }
+
+    @font-face {
+        font-family: 'Arlindao';
+        src: url("file:///C:/Users/01565072/Documents/arlindao/arlindaofonts/UnknownGalaxyItalic.ttf");
+    }
+
+    .titulindo{
+        font-family: 'Arlindao', Arial;
+        font-size: 4em;
+    }
+
+   
+    
+</style>
+<body>
+    <h1 class="titulindo">Homenagem ao Rei de Madureira Arlindo Cruz!!!</h1>
+    <p>Grande Madureira do Arlindão Cruzeta</p>
+    <img src="arlindaoimsg/madureira.jfif" id="madeira" onclick="mudardureira()" alt="grande cidade do arlindao">
+    <img src="arlindaoimsg/arlindo.jfif" alt="Arçodmap" id="arlindo" onclick="mudarlindo()">
+    <br>
+    
+    <video width="448px" loop="true" autoplay="autoplay" controls id="madudeira">
+        <source src="file:///C:/Users/01565072/Documents/arlindao/musica/madureira.mp4" type="video/mp4" />    
+    </video>
+<script>
+    function mudarlindo() {
+        var image = document.getElementById("arlindo");
+        console.log(image.src)
+        if(image.src === "file:///C:/Users/01565072/Documents/arlindao/arlindaoimsg/arlindo.jfif"){
+            image.setAttribute("src", "arlindaoimsg/arlindo2.jfif");
+        }
+        else if(image.src === "file:///C:/Users/01565072/Documents/arlindao/arlindaoimsg/arlindo2.jfif"){
+            image.setAttribute("src", "arlindaoimsg/arlindo.jfif") ;
+        }
+    }
+
+    function mudardureira() {
+        var image = document.getElementById("madeira");
+        console.log(image.src)
+        if(image.src === "file:///C:/Users/01565072/Documents/arlindao/arlindaoimsg/madureira.jfif"){
+            image.setAttribute("src", "arlindaoimsg/madureira2.jfif");
+        }
+        else if(image.src === "file:///C:/Users/01565072/Documents/arlindao/arlindaoimsg/madureira2.jfif"){
+            image.setAttribute("src", "arlindaoimsg/madureira.jfif") ;
+        }
+    }
+</script>
+</html>
