@@ -13,10 +13,6 @@ export default function App() {
           <Text style={styles.textf}>Hello, some people call me Guilherme, i think that's right!</Text>
           <Text style={styles.textf}>I'm on the way to become a Full-Stack developer and i'm trying to learn some React Native</Text>
         </View>
-        <View>
-          <Icon></Icon>
-          <Icon></Icon>
-        </View>
       </View>
       <StatusBar style="auto" />
     </View>
