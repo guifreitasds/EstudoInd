@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-n
 export function ButtonOpt(props) {
   return(
     <View style={styles.container}>
-        <TouchableOpacity style={styles.medicineTouchable}>
+        <TouchableOpacity style={styles.medicineTouchable} onPress={props.func}>
             <Image style={styles.img} source={props.source}></Image>
             <Text style={styles.text}>{props.title}</Text>
         </TouchableOpacity>
@@ -19,20 +19,23 @@ const styles = StyleSheet.create({
     img:{
         width: 38,
         height: 38,
+        marginRight: 5,
     },
     medicineTouchable:{
+        textAlign: 'center',
         display: 'flex',
         flexDirection: 'row',
         marginTop: '15%',
         backgroundColor: '#F6F6F6',
-        padding: 25,
+        padding: 15,
         borderRadius: 5,
     },
     text:{
+        textAlign:'center',
         color: '#741B47', 
         fontFamily: 'serif',
         fontWeight: 'bold',
         marginTop: '4%',
-        marginLeft: '3%',
+        marginLeft: '1%',
     },
 })

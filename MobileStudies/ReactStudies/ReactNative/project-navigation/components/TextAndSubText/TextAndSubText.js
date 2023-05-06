@@ -1,11 +1,11 @@
 
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 
-export function TextAndSubText() {
+export function TextAndSubText(props) {
   return(
     <View>
-        <Text style={styles.textMain}>Vamos Começar a usar o <Text style={{color: '#741B47'}}>C.O.R.O.A!</Text></Text>
-        <Text style={styles.subTextMain}>O que você gostaria de fazer por aqui?</Text>
+        <Text style={styles.textMain}>{props.text}<Text style={{color: '#741B47'}}>{props.textSpan}</Text></Text>
+        <Text style={styles.subTextMain}>{props.subText}</Text>
     </View>
     );
 }
