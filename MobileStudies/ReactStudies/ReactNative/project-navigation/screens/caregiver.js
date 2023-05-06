@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 
-export function DetailsScreen({route, navigation}) {
-  const {itemId, otherParam} = route.params;
+export function CaregiverScreen({route, navigation}) {
 
   return(
     <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-      <Text>Details Screen {itemId}, {otherParam}</Text>
+      <Text>Details Screen</Text>
     </View>
   );
 }

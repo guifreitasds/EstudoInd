@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HomeScreen} from './screens/home'
 import { MedicinesScreen } from './screens/medicines';
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import { DetailsScreen } from './screens/details';
+import { CaregiverScreen } from './screens/caregiver';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -25,6 +25,8 @@ export default function App() {
                 : 'home-outline';
             } else if (route.name === 'Medicines') {
               iconName = focused ? 'medkit' : 'medkit-outline';
+            } else if (route.name === 'Caregiver') {
+              iconName = focused ? 'people' : 'people-outline';
             }
 
             // You can return any component that you like here!
@@ -33,8 +35,9 @@ export default function App() {
           tabBarActiveTintColor: '#741B47',
           tabBarInactiveTintColor: 'gray',
         })}>
-        <Tab.Screen name='Home' component={HomeScreen}></Tab.Screen>
-        <Tab.Screen name='Medicines' component={MedicinesScreen}></Tab.Screen>
+        <Tab.Screen name='Home' component={HomeScreen}/>
+        <Tab.Screen name='Medicines' component={MedicinesScreen}/>
+        <Tab.Screen name='Caregiver' component={CaregiverScreen}/>
       </Tab.Navigator>
     </NavigationContainer>
   );
