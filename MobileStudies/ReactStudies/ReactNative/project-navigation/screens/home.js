@@ -18,7 +18,11 @@ export function HomeScreen({ navigation }) {
               navigation.navigate('Medicines')
             }
           }/>
-        <ButtonOpt source={require('../assets/doctor.png')} title='Cadastrar meu cuidador'/>
+        <ButtonOpt source={require('../assets/doctor.png')} title='Cadastrar meu cuidador'
+            func={()=>{
+              navigation.navigate('Caregiver')
+            }
+          }/>
         <ButtonOpt source={require('../assets/file.png')} title='Abrir relatório diário'/>
         <ButtonOpt source={require('../assets/letter.png')} title='Chat com Cuidador'/>
       </View>

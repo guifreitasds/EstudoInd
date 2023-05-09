@@ -13,8 +13,11 @@ export function ButtonOpt(props) {
 }
 
 const styles = StyleSheet.create({
-    container:{
-
+    container: {
+        shadowColor: '#000000',
+        shadowOffset: {width: 0, height: 5},
+        shadowOpacity: 0.20,
+        shadowRadius: 3,
     },
     img:{
         width: 38,
@@ -29,6 +32,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#F6F6F6',
         padding: 15,
         borderRadius: 5,
+
     },
     text:{
         textAlign:'center',

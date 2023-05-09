@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     subTextMain:{
         marginTop: '10%',
         fontSize: 16,
-        marginLeft: '2%'
+        marginLeft: '2%',
+        textAlign: 'center',
     }
 })
