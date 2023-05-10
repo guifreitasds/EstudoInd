@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
         height: 180,
     },
     information:{
-        justifyContent: 'center'
     },
     image: {
         backgroundColor: 'pink',

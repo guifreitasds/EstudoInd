@@ -44,6 +44,6 @@ const styles = StyleSheet.create({
   },
   containerTextMain:{
     marginTop: '5%',
-    width: '57%'
+    width: '80%'
   },
 })
