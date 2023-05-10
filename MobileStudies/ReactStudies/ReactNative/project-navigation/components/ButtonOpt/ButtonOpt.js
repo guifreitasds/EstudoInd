@@ -14,10 +14,10 @@ export function ButtonOpt(props) {
 
 const styles = StyleSheet.create({
     container: {
-        shadowColor: '#000000',
-        shadowOffset: {width: 0, height: 5},
-        shadowOpacity: 0.20,
-        shadowRadius: 3,
+        shadowColor: '#101010',
+        shadowOffset: {width: 0, height: 3},
+        shadowOpacity: 0.12,
+        shadowRadius: 2,
     },
     img:{
         width: 38,
