@@ -17,5 +17,6 @@ export function MedicinesList(props) {
 const styles = StyleSheet.create({
     container:{
         margin: 20,
+        marginTop: -1,
     }
 })
