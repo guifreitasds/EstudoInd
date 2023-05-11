@@ -20,7 +20,7 @@ export function HomeScreen({ navigation }) {
           }/>
         <ButtonOpt source={require('../assets/doctor.png')} title='Cadastrar meu cuidador'
             func={()=>{
-              navigation.navigate('Caregiver')
+              navigation.navigate('Profile')
             }
           }/>
         <ButtonOpt source={require('../assets/file.png')} title='Abrir relatório diário'/>
