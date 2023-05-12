@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, ScrollView } from 'react-native';
 import { CoroaImgText } from '../components/CoroaImgText/CoroaImgText';
 import { TextAndSubText } from '../components/TextAndSubText/TextAndSubText';
 import { ButtonOpt } from '../components/ButtonOpt/ButtonOpt'
 
 export function HomeScreen({ navigation }) {
   return(
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.header}>
         <CoroaImgText></CoroaImgText>
       </View>
@@ -24,16 +24,19 @@ export function HomeScreen({ navigation }) {
             }
           }/>
         <ButtonOpt source={require('../assets/file.png')} title='Abrir relatório diário'/>
-        <ButtonOpt source={require('../assets/letter.png')} title='Chat com Cuidador'/>
+        <ButtonOpt source={require('../assets/letter.png')} title='Chat com Cuidador'
+          func={()=>{
+            navigation.navigate('Profile');
+          }}
+          />
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    alignItems: 'center',
     textAlign: 'center',
     backgroundColor: '#FFC9AB'
   },
@@ -43,7 +46,11 @@ const styles = StyleSheet.create({
     
   },
   containerTextMain:{
+    alignItems: 'center',
     marginTop: '5%',
-    width: '80%'
   },
+  optionsButtons: {
+    alignItems: 'center',
+    marginBottom: '5%'
+  }
 })

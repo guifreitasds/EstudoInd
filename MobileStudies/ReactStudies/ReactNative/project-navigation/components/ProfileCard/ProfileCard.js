@@ -20,6 +20,7 @@ export function ProfileCard(props) {
 const styles = StyleSheet.create({
     container:{
         alignItems: 'center',
+        marginBottom: '5%'
     },
     containerHead:{
         alignItems: 'center',

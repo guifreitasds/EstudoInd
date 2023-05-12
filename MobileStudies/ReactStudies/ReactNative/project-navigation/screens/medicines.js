@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { CoroaImgText } from '../components/CoroaImgText/CoroaImgText';
 
 import { MedicinesList } from '../components/MedicineList/MedicinesList';
@@ -22,9 +22,9 @@ export function MedicinesScreen({route, navigation}) {
       <View style={styles.alignItemsCenter}>
         <Text style={styles.subText}>É para não se esquecer!</Text>
       </View>
-      <View style={styles.containerTextButton}>
+      <TouchableOpacity style={styles.containerTextButton}>
         <Text style={styles.textButton}>+</Text>
-      </View>
+      </TouchableOpacity>
       <View>
         <View style={styles.titletoMedicines}>
           <Text style={{color: '#f0f0f0', fontSize: 22, fontFamily: 'serif', fontWeight: 'bold'}}>Remédios Cadastrados</Text>
@@ -58,16 +58,16 @@ const styles = StyleSheet.create({
   },
   containerTextButton: {
     backgroundColor: '#f0f0f0',
-    padding: '3%',
     margin: 25,
     width: '20%',
     height: '7%',
     borderRadius: 20,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingLeft: '3%'
   },
   textButton: {
     color: '#741B47',
-    fontSize: 20
+    fontSize: 23,
   },
   titletoMedicines:{
     alignItems: 'center',

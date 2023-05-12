@@ -10,7 +10,7 @@ export function CaregiverInfo(props) {
                 </View>
                 <View style={styles.containerCareInfo}>
                     <Text style={styles.textName}>Dr. Paulo Silva</Text>
-                    <Text style={styles.textAge}>38 Anos - CRM: 000000-0</Text>
+                    <Text style={styles.textAge}>38 Anos - CRM: 000000-1</Text>
                 </View>
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity style={styles.buttonContact}>
