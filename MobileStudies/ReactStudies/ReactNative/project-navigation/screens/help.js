@@ -18,6 +18,9 @@ export function HelpScreen({ navigation }) {
         <TextInput placeholder='Qual a sua dúvida?' style={styles.inputHelp}></TextInput>
       </View>
       <View style={styles.containerHelpButtons}>
+        <HelpButton title='Fazer Login' source={require('../assets/login.png')} func={()=>navigation.navigate('Login')}/>
+      </View>
+      <View style={styles.containerHelpButtons}>
         <HelpButton title='Segurança' source={require('../assets/security.png')}/>
         <HelpButton title='Assinatura' source={require('../assets/coin.png')}/>
       </View>
@@ -27,7 +30,7 @@ export function HelpScreen({ navigation }) {
       </View>
       <View style={styles.containerHelpButtons}>
         <HelpButton title='Dados da Conta' source={require('../assets/badge.png')} func={()=>navigation.navigate('Profile')}/>
-        <HelpButton title='Sobre o C.O.R.O.A' source={require('../assets/crown.png')}/>
+        <HelpButton title='Sobre o C.O.R.O.A' source={require('../assets/crown.png')} func={()=>navigation.navigate('About')}/>
       </View>
     </ScrollView>
   );
@@ -73,6 +76,6 @@ const styles = StyleSheet.create({
     display:'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   }
 })

@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     textSupport:{
-        fontSize: 24,
+        fontSize: 23,
         fontFamily:'serif',
         fontWeight: 'bold',
         color: '#f0f0f0'

@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
         shadowOffset: {width: 0, height: 3},
         shadowOpacity: 0.12,
         shadowRadius: 2,
+        width: '58.5%'
     },
     img:{
         width: 38,
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'row',
-        marginTop: '15%',
+        marginTop: '20%',
         backgroundColor: '#F6F6F6',
         padding: 15,
         borderRadius: 5,

@@ -71,11 +71,11 @@ const styles = StyleSheet.create({
   },
   titletoMedicines:{
     alignItems: 'center',
-    backgroundColor: '#741B47',
+    backgroundColor: '#521332',
     padding: 20,
     width: '89.9%',
     marginLeft: 20,
     borderTopStartRadius:5,
-    borderTopEndRadius: 5
+    borderTopEndRadius: 5,
   },
 });

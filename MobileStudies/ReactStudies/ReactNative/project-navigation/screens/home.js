@@ -26,7 +26,7 @@ export function HomeScreen({ navigation }) {
         <ButtonOpt source={require('../assets/file.png')} title='Abrir relatório diário'/>
         <ButtonOpt source={require('../assets/letter.png')} title='Chat com Cuidador'
           func={()=>{
-            navigation.navigate('Profile');
+            navigation.navigate('Chat');
           }}
           />
       </View>

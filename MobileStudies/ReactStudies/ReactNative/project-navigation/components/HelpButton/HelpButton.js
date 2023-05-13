@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     },
     medicineTouchable:{
         margin: 20,
-        width: 120,
-        height: 120,
+        width: 150,
+        height: 150,
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
