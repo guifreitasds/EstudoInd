@@ -12,8 +12,8 @@ class User {
     }
 }
 
-const user = new User('Claudio', 20)
-const secondUser = new User('Maria', 22)
+const user: User = new User('Claudio', 20)
+const secondUser: User = new User('Maria', 22)
 
 
 user.showInfo()
