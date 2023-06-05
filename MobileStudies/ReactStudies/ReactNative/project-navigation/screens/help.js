@@ -1,7 +1,5 @@
-import { StyleSheet, Text, View, Button, Image, ScrollView, TextInput } from 'react-native';
+import {Text, View, ScrollView, TextInput } from 'react-native';
 import { CoroaImgText } from '../components/CoroaImgText/CoroaImgText';
-import { TextAndSubText } from '../components/TextAndSubText/TextAndSubText';
-import { ButtonOpt } from '../components/ButtonOpt/ButtonOpt'
 import { HelpButton } from '../components/HelpButton/HelpButton';
 import styles from '../styles/styleHelp';
 

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, Image, ScrollView } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import { CoroaImgText } from '../components/CoroaImgText/CoroaImgText';
 import { TextAndSubText } from '../components/TextAndSubText/TextAndSubText';
 import { ButtonOpt } from '../components/ButtonOpt/ButtonOpt'

@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { CoroaImgText } from '../components/CoroaImgText/CoroaImgText';
+import styles from '../styles/styleMedicines';
 
 import { MedicinesList } from '../components/MedicineList/MedicinesList';
 
