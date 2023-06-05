@@ -19,14 +19,15 @@ const styles = StyleSheet.create({
         color: '#741B47',
         fontWeight: '600'
       },
-      containerImgText:{
-        display: 'flex',
-        flexDirection: 'row'
-    
-      },
-      imageCoroa:{
-        width: 100,
-        height: 100,
-        marginLeft: -15,
-      },
+    containerImgText:{
+      display: 'flex',
+      justifyContent: 'center',
+      flexDirection: 'row',
+      paddingRight: 20
+    },
+    imageCoroa:{
+      width: 100,
+      height: 100,
+      marginLeft: -15,
+    },
 })

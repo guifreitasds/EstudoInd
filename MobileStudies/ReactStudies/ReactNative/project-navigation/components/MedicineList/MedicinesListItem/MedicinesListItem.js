@@ -25,8 +25,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#741B47',
         height: 180,
     },
-    information:{
-    },
     image: {
         backgroundColor: 'pink',
         height: 50,

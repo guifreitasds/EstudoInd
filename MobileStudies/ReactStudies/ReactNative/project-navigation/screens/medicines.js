@@ -3,6 +3,7 @@ import { CoroaImgText } from '../components/CoroaImgText/CoroaImgText';
 import styles from '../styles/styleMedicines';
 
 import { MedicinesList } from '../components/MedicineList/MedicinesList';
+import { MedicinesHeader } from '../components/MedicinesHeader/MedicinesHeader';
 
 const data = [
   {key: 1, name: 'Dipirona', hour: '11:00', source: require('../assets/dipirona.jpg')},
@@ -17,15 +18,7 @@ export function MedicinesScreen({route, navigation}) {
       <View style={styles.alignItemsCenter}> 
         <CoroaImgText/>
       </View>   
-      <View style={styles.alignItemsCenter}>
-        <Text style={styles.text}>Vamos agendar os horários de todos os seus remédios?</Text>
-      </View>     
-      <View style={styles.alignItemsCenter}>
-        <Text style={styles.subText}>É para não se esquecer!</Text>
-      </View>
-      <TouchableOpacity style={styles.containerTextButton}>
-        <Text style={styles.textButton}>+</Text>
-      </TouchableOpacity>
+      <MedicinesHeader/>
       <View>
         <View style={styles.titletoMedicines}>
           <Text style={{color: '#f0f0f0', fontSize: 22, fontFamily: 'serif', fontWeight: 'bold'}}>Remédios Cadastrados</Text>
