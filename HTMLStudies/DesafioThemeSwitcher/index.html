@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main id="main">
+        <div>
+            <img src="assets/moon.svg" alt="Lua" onclick="switcherMoon()" id="moon">
+            <img src="assets/sun.svg" alt="Sol" onclick="switcherSun()" id="sun">
+        </div>
+    </main>
+    <script>
+
+        let main = document.getElementById('main');
+        let imgSun = document.getElementById('sun');
+        let imgMoon = document.getElementById('moon');
+        function switcherMoon() {
+            if(main.getAttribute("class")=="light" || main.getAttribute("class")==null){
+                main.setAttribute("class", "dark");
+                imgSun.setAttribute("class", "lower")
+                imgMoon.setAttribute("class", "bigger")
+            } 
+        }
+
+        function switcherSun() {
+            if(main.getAttribute("class")=="dark" || main.getAttribute("class")==null){
+                main.setAttribute("class", "light");
+                imgMoon.setAttribute("class", "lower")
+                imgSun.setAttribute("class", "bigger")
+            } 
+        }
+    </script>
+</body>
+</html>
