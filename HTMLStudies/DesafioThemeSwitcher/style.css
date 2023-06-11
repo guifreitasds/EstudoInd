@@ -33,7 +33,7 @@ div{
 }
 
 img{
-    transition: 100ms linear;
+    transition: 200ms ease-in-out;
 }
 
 .bigger{
