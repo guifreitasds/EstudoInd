@@ -24,11 +24,11 @@ main{
 }
 
 img.profilepic{
-    width: 100px;
-    height: 150px;
-    margin-bottom: 25px;
+    width: 170px;
+    margin-bottom: 15px;
+    border-radius: 50%;
 
-    border: #091 solid;
+    border: var(--text-color) solid;
 }
 
 div.profile{
@@ -42,7 +42,7 @@ div.profile{
     border-radius: 10px;
     background-color: var(--bg-cards);
     width: 24vw;
-    height: 37vh;
+    height: 35vh;
 }
 
 p.nameprof{
@@ -60,6 +60,7 @@ p.subtext{
 section{
     margin-left: 5%;
 }
+
 
 div.projects-header{
     display: flex;
@@ -145,12 +146,12 @@ p.text-posts{
 
 div.sites{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
     font-family: var(--font-main);
     margin-top: 5vh;
+    padding-left: 2vw;
 
-    padding-top: 20px;
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
@@ -158,7 +159,32 @@ div.sites{
     height: 37vh;
 }
 
+div.info{
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+}
+
+.icon-info{
+    fill: var(--text-color);
+    margin-right: 1vw;
+}
+
 
 .shadow-box{
     box-shadow: 1px 1px 3px 1px #121212b1
+}
+
+div.techs{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-main);
+    margin-top: 5vh;
+    padding: 3vh 0 0 1.5vw;
+
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 24vw;
+    height: 37vh;
 }
