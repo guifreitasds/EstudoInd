@@ -18,6 +18,8 @@ body{
 }
 
 main{
+    display: flex;
+    flex-direction: row;
     padding: 35px;
 }
 
@@ -39,8 +41,8 @@ div.profile{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 350px;
-    height: 290px;
+    width: 24vw;
+    height: 37vh;
 }
 
 p.nameprof{
@@ -52,4 +54,111 @@ p.nameprof{
 p.subtext{
     font-weight: lighter;
     font-size: small;
+}
+
+
+section{
+    margin-left: 5%;
+}
+
+div.projects-header{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-main);
+    padding-left: 2vw;
+
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 65vw;
+    height: 13vh;
+
+}
+
+p.text-projects{
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+div.projects{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: space-between;
+}
+
+div.project-one{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-main);
+
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 31vw;
+    height: 19vh;
+}
+
+div.project-two{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-main);
+
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 31vw;
+    height: 19vh;
+}
+
+
+div.posts-header{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-main);
+    padding-left: 2vw;
+    margin-top: 5vh;
+
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 65vw;
+    height: 13vh;
+
+}
+
+p.text-posts{
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+
+div.sites{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-main);
+    margin-top: 5vh;
+
+    padding-top: 20px;
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 24vw;
+    height: 37vh;
+}
+
+
+.shadow-box{
+    box-shadow: 1px 1px 3px 1px #121212b1
 }
