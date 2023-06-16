@@ -188,3 +188,24 @@ div.techs{
     width: 24vw;
     height: 37vh;
 }
+
+div.reps{
+
+    padding: 10px 0px 0px 30px;
+    display: flex;
+    justify-content: left;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    font-family: var(--font-main);
+    color: var(--text-color);
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
