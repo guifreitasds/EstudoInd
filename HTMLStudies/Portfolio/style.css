@@ -67,7 +67,6 @@ div.techs{
     border-radius: 10px;
     background-color: var(--bg-cards);
     width: 24vw;
-    height: 40vh;
 }
 
 div.divtechparap{
@@ -75,7 +74,6 @@ div.divtechparap{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
     padding: 30px;
 }
 
@@ -107,13 +105,32 @@ div.exp{
     flex-direction: column;
     font-family: var(--font-main);
     margin-top: 5vh;
-    padding: 3vh 0 0 0;
+    padding: 3vh 0 3vh 0;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
     width: 24vw;
-    height: 40vh;
+}
+
+div.experience{
+    padding-left: 5%;
+    padding-top: 8%;
+}
+
+p.institute{
+    padding: 10px;
+}
+
+p.atvs{
+    text-align: justify;
+    font-size: 0.9rem;
+    max-width: 20vw;
+    padding-left: 1vw;
+}
+
+.exptitle{
+    font-size: 1.3rem;
 }
 
 
@@ -219,10 +236,17 @@ div.sites{
     height: 37vh;
 }
 
-div.info{
+a.info{
     display: flex;
     flex-direction: row;
     color: var(--text-color);
+    text-decoration: none;
+
+    transition: 75ms ease-out;
+}
+
+a.info:hover{
+    font-size: 1.1rem;
 }
 
 .icon-info{
