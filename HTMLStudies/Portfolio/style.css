@@ -115,7 +115,12 @@ div.exp{
 
 div.experience{
     padding-left: 5%;
-    padding-top: 8%;
+    padding-top: 10%;
+}
+
+p.period{
+    padding: 10px;
+    font-size: 0.9rem;
 }
 
 p.institute{
@@ -127,6 +132,7 @@ p.atvs{
     font-size: 0.9rem;
     max-width: 20vw;
     padding-left: 1vw;
+    line-height: 1.5rem;
 }
 
 .exptitle{
@@ -182,19 +188,7 @@ div.project-one{
     height: 19vh;
 }
 
-div.project-two{
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    font-family: var(--font-main);
 
-    color: var(--text-color);
-    border-radius: 10px;
-    background-color: var(--bg-cards);
-    width: 31vw;
-    height: 19vh;
-}
 
 
 div.posts-header{
