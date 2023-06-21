@@ -37,12 +37,11 @@ div.profile{
     flex-direction: column;
     font-family: var(--font-main);
 
-    padding-top: 20px;
+    padding: 32px 0px 32px 0px;
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 24vw;
-    height: 35vh;
+    width: 100%;
 }
 
 p.nameprof{
@@ -60,13 +59,13 @@ div.techs{
     display: flex;
     flex-direction: column;
     font-family: var(--font-main);
-    margin-top: 5vh;
-    padding: 3vh 0 0 0;
+    margin-top: 10%;
+    padding: 7% 0 0 0;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 24vw;
+    width: 100%;
 }
 
 div.divtechparap{
@@ -85,13 +84,13 @@ div.divtechparap > div{
 p.techsparap{
     display: flex;
     justify-content: center;
-    width: 6.5vw;
+    width: 90px;
     padding: 10px;
     background-color: var(--bg-techs);
     margin: 10px;
     color: var(--body-bg-color);
     font-weight: bolder;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     border-radius: 25px;
     text-transform: uppercase;
 }
@@ -104,13 +103,13 @@ div.exp{
     display: flex;
     flex-direction: column;
     font-family: var(--font-main);
-    margin-top: 5vh;
-    padding: 3vh 0 3vh 0;
+    margin-top: 10%;
+    padding: 5% 0 5% 0;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 24vw;
+    width: 100%;
 }
 
 div.experience{
@@ -130,7 +129,7 @@ p.institute{
 p.atvs{
     text-align: justify;
     font-size: 0.9rem;
-    max-width: 20vw;
+    width: 85%;
     padding-left: 1vw;
     line-height: 1.5rem;
 }
@@ -151,13 +150,11 @@ div.projects-header{
     justify-content: center;
     flex-direction: column;
     font-family: var(--font-main);
-    padding-left: 2vw;
+    padding: 3.9%;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 65vw;
-    height: 13vh;
 
 }
 
@@ -170,7 +167,7 @@ p.text-projects{
 div.projects{
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;
+    margin-top: 3.5%;
     justify-content: space-between;
 }
 
@@ -180,12 +177,13 @@ div.project-one{
     justify-content: center;
     flex-direction: column;
     font-family: var(--font-main);
+    padding:40px;
+    margin-right: 10px;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
     width: 31vw;
-    height: 19vh;
 }
 
 
@@ -197,14 +195,12 @@ div.posts-header{
     justify-content: center;
     flex-direction: column;
     font-family: var(--font-main);
-    padding-left: 2vw;
-    margin-top: 5vh;
+    padding: 3.9%;
+    margin-top: 4.5%;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 65vw;
-    height: 13vh;
 
 }
 
@@ -220,14 +216,13 @@ div.sites{
     flex-direction: column;
     justify-content: space-evenly;
     font-family: var(--font-main);
-    margin-top: 5vh;
-    padding-left: 2vw;
+    margin-top: 10%;
+    padding: 20px;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 24vw;
-    height: 37vh;
+    width: 100%;
 }
 
 a.info{
@@ -235,7 +230,7 @@ a.info{
     flex-direction: row;
     color: var(--text-color);
     text-decoration: none;
-
+    padding: 10px;
     transition: 75ms ease-out;
 }
 
