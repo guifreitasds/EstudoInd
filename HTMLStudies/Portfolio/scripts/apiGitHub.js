@@ -30,7 +30,7 @@ function getApiGitHub() {
       //   ul.appendChild(li);
       // });
 
-      for (let i = 0; i < 2; i++) {
+      for (let i = 0; i < 6; i++) {
         const item = data[i];
         let divone = document.createElement('div');
         let divproj = document.querySelector('div.projects');
@@ -40,7 +40,7 @@ function getApiGitHub() {
         }
         divone.innerHTML = `
         <div class="project-one shadow-box">
-          <strong>${item.name} Repo</strong>
+          <strong>${item.name}</strong>
           <span>${item.description}</span>
         </div>
         `;

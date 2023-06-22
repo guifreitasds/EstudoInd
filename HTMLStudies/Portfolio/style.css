@@ -41,7 +41,7 @@ div.profile{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 100%;
+    width: 400px;
 }
 
 p.nameprof{
@@ -65,7 +65,7 @@ div.techs{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 100%;
+    width: 400px;
 }
 
 div.divtechparap{
@@ -109,7 +109,7 @@ div.exp{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 100%;
+    width: 400px;
 }
 
 div.experience{
@@ -167,7 +167,8 @@ p.text-projects{
 div.projects{
     display: flex;
     flex-direction: row;
-    margin-top: 3.5%;
+    flex-wrap: wrap;
+    margin-top: 3%;
     justify-content: space-between;
 }
 
@@ -179,6 +180,7 @@ div.project-one{
     font-family: var(--font-main);
     padding:40px;
     margin-right: 10px;
+    margin-top: 10px;
 
     color: var(--text-color);
     border-radius: 10px;
@@ -222,7 +224,7 @@ div.sites{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 100%;
+    width: 400px;
 }
 
 a.info{
