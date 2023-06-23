@@ -168,11 +168,11 @@ div.projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 3%;
+    margin-top: 2.5%;
     justify-content: space-between;
 }
 
-div.project-one{
+a.project-one{
     display: flex;
     align-items: left;
     justify-content: center;
@@ -180,14 +180,24 @@ div.project-one{
     font-family: var(--font-main);
     padding:40px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
     width: 31vw;
+
+    transition: 100ms ease-in-out;
+    
+    text-decoration: none;
 }
 
+
+a.project-one:hover{
+    background-color: var(--text-color);
+    color: var(--bg-cards);
+    cursor: pointer;
+}
 
 
 

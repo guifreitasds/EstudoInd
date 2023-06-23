@@ -10,7 +10,6 @@ function getApiGitHub() {
       }
 
       var data = await res.json();
-      console.log(data)
 
       // data.map((item) => {
       //   let li = document.createElement('li');
@@ -39,10 +38,10 @@ function getApiGitHub() {
             item.description="Sem descrição"
         }
         divone.innerHTML = `
-        <div class="project-one shadow-box">
+        <a class="project-one shadow-box" href="https://github.com/guifreitasds/${item.name}" target="_blank">
           <strong>${item.name}</strong>
           <span>${item.description}</span>
-        </div>
+        </a>
         `;
 
         divproj.appendChild(divone);
