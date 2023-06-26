@@ -262,11 +262,8 @@ a.info:hover{
 
 
 
-div.reps{
-
-    padding: 10px 0px 0px 30px;
-    display: flex;
-    justify-content: left;
+div.commits{
+    
 }
 
 ul{

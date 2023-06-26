@@ -1,6 +1,3 @@
-// Write Javascript code!
-const ul = document.querySelector('ul');
-
 
 function getApiGitHub() {
   fetch('https://api.github.com/users/guifreitasds/repos')
