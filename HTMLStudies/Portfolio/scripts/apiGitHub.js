@@ -35,7 +35,7 @@ function getApiGitHub() {
             item.description="Sem descrição"
         }
         divone.innerHTML = `
-        <a class="project-one shadow-box" href="https://github.com/guifreitasds/${item.name}" target="_blank">
+        <a class="project-one shadow-box" target="_blank" onclick="getCommits('${item.name}')">
           <strong>${item.name}</strong>
           <span>${item.description}</span>
         </a>
