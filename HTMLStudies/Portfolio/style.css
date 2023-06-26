@@ -263,7 +263,37 @@ a.info:hover{
 
 
 div.commits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+    justify-content: center;
+}
+
+a.commit-one{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-main);
+    padding:40px;
+    margin-top: 20px;
+
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    width: 60vw;
+
+    transition: 100ms ease-in-out;
     
+    text-decoration: none;
+}
+
+
+a.commit-one:hover{
+    background-color: var(--text-color);
+    color: var(--bg-cards);
+    cursor: pointer;
 }
 
 ul{
