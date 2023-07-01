@@ -19,8 +19,11 @@ app.get("/", (req, res) => {
             message: "eja você mesmo e comece a codar hoje!"
         }
     ]
+
+    const subtitle = "EJS é uma linguagem de modelagem para criação de páginas HTML em JS"
     res.render("pages/index", {
-        qualitys: items
+        qualitys: items,
+        subtitle: subtitle
     })
 })
 
