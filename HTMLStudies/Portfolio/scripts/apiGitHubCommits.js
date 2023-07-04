@@ -19,7 +19,7 @@ function getCommits(repo) {
 
             
             divintocommits.innerHTML = `
-            <a class="commit-one shadow-box" href="https://github.com/guifreitasds/EstudoInd/commit/${sha}">
+            <a class="commit-one shadow-box" href="https://github.com/guifreitasds/${repo}/commit/${sha}">
                 <strong>${item.commit.message}</strong>
                 <span>${item.commit.author.date}</span>
             </a>

@@ -147,8 +147,8 @@ section{
 div.projects-header{
     display: flex;
     align-items: left;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     font-family: var(--font-main);
     padding: 3.9%;
 
