@@ -99,7 +99,7 @@ h1{
     margin-left: 15px;
 }
 
-div.exp{
+div.exp, div.edu{
     display: flex;
     flex-direction: column;
     font-family: var(--font-main);
@@ -112,18 +112,18 @@ div.exp{
     width: 400px;
 }
 
-div.experience{
+div.experience, div.education{
     padding-left: 5%;
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 p.period{
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 0.9rem;
 }
 
 p.institute{
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 p.atvs{
@@ -134,8 +134,8 @@ p.atvs{
     line-height: 1.5rem;
 }
 
-.exptitle{
-    font-size: 1.3rem;
+.exptitle, .edutitle{
+    font-size: 1.2rem;
 }
 
 
