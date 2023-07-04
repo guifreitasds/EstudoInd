@@ -309,3 +309,14 @@ li{
     display: flex;
     flex-direction: column;
 }
+
+a.seecommits{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 100ms ease-out;
+}
+
+a.seecommits:hover{
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
