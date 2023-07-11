@@ -17,6 +17,30 @@ body{
     background-color: var(--body-bg-color);
 }
 
+nav{
+
+    display: flex;
+    background-color: #302F3D;
+    padding: 10px;
+    font-family: var(--font-main);
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    border-bottom: 1px solid #ffffff29;
+}
+a{
+    color: #837e9f80;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--text-color);
+    background-color: var(--body-bg-color);
+    transition: 100ms ease-in-out;
+}
+
 main{
     display: flex;
     flex-direction: row;
