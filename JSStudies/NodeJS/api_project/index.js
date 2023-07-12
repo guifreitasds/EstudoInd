@@ -19,7 +19,12 @@ app.use(exp.json())
 
 app.route('/').get( (req, res)=>res.send(author) )
 
-app.route('/').put( (req, res) => {
-    author = req.body.author
-    res.send(author)
+// app.route('/').put( (req, res) => {
+//     author = req.body.author
+//     res.send(author)
+// } )
+
+app.route('/:id').delete( (req, res) => {
+    author=""
+    res.send(`${req.params.id} Apagado`)
 } )
