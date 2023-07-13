@@ -10,6 +10,10 @@ app.use(exp.json())
 //     res.send(`Meu nome é ${nome}, moro em ${cidade} e meus times favoritos são ${times_favoritos}`)
 // } )
 
-app.route('/').get( (req, res) => res.send(`Olá`) )
+// app.route('/').get( (req, res) => res.send(`Olá`) )
 
-app.route('/:nome').get( (req, res) => res.send(`Meu nome é ${req.params.nome}`) )
+// app.route('/:nome').get( (req, res) => res.send(`Meu nome é ${req.params.nome}`) )
+
+app.route("/").get( (req, res) => res.send(req.query) )
+
+app.route("/about/user").get( (req, res) => res.send(req.query) )
