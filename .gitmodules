@@ -1,0 +1,6 @@
+[submodule "JSStudies/NodeJS/node_api_discover"]
+	path = JSStudies/NodeJS/node_api_discover
+	url = https://github.com/jakeliny/node-api-discover.git
+[submodule "JSStudies/NodeJS/JSStudies/NodeJS/node_api_discover"]
+	path = JSStudies/NodeJS/JSStudies/NodeJS/node_api_discover
+	url = https://github.com/jakeliny/node-api-discover.git
