@@ -6,10 +6,10 @@ function getUsers() {
     .then( data => document.querySelector("#renderapi").innerHTML=`${JSON.stringify(data)}` )
     .catch( e => console.error(e) )
 }
-// getUsers()
-getUser(5)
+getUsers()
+getUser(3)
 // addUser()
-updateUser(2)
+// updateUser(2)
 
 function getUser(id) {
     fetch(`${url}/${id}`)
@@ -64,3 +64,17 @@ function updateUser(id) {
         })
         .catch(e => console.error(e))
 }
+
+function deleteUser(id) {
+    fetch(`${url}/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(response => response.json())
+    .then(data => alertApi.innerHTML=`${data}`)
+    .catch()
+}
+
+deleteUser(4)
