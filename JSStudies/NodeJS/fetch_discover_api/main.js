@@ -6,9 +6,10 @@ function getUsers() {
     .then( data => document.querySelector("#renderapi").innerHTML=`${JSON.stringify(data)}` )
     .catch( e => console.error(e) )
 }
-getUsers()
-getUser(2)
-addUser()
+// getUsers()
+getUser(5)
+// addUser()
+updateUser(2)
 
 function getUser(id) {
     fetch(`${url}/${id}`)
@@ -41,4 +42,25 @@ function addUser() {
         })
         .catch( e => console.error(e))
 
+}
+
+function updateUser(id) {
+    const updatedUser = {
+        name: "guifreitasds",
+        avatar: "https://avatars.githubusercontent.com/u/99972010?v=4",
+        city: "Recife"
+    }
+
+    fetch(`${url}/${id}`,{
+        method: "PUT",
+        body: JSON.stringify(updatedUser),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+        .then(response => response.json())
+        .then(data => {
+            alertApi.innerHTML = `${data}`
+        })
+        .catch(e => console.error(e))
 }
