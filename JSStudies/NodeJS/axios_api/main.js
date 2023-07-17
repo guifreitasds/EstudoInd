@@ -1,7 +1,7 @@
-const url = `http://localhost:5500/api/2`;
+const url = `http://localhost:5500/api/`;
 
-function getUser(url) {
-    axios.get(url)
+function getUser(id) {
+    axios.get(`http://localhost:5500/api/${id}`)
         .then(response => {
             users.innerHTML = `${JSON.stringify(response.data)}`
             userAvatar.src = `${response.data.avatar}`
@@ -21,6 +21,6 @@ function addUser(user) {
         .catch(e => console.log(e))
 }
 
-getUser(url)
+getUser(2)
 
 // addUser(user)
