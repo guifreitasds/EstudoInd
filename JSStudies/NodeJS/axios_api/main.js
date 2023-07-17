@@ -33,8 +33,15 @@ function updateUser(id, user) {
         .catch(e => console.log(e))
 }
 
+function deleteUser(id) {
+    axios.delete(`${url}${id}`)
+        .then(response => console.log(response))
+        .catch(e => console.log(e))
+}
+
 getUser(2)
 
-updateUser(2, updatedUser)
+// deleteUser(2)
+// updateUser(2, user)
 
 // addUser(user)
