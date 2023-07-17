@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 20px;
+
+    color: #754600;
+    transition: text-shadow 200ms;
+}
+
+h1:hover{
+    text-shadow: 4px 4px 25px black;
+}
+
+.container input.txt{
+    width: 50%;
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+
+    margin: 20px;
+    font-size: 18px;
+}
+
+.container input.btt{
+    width: 40%;
+
+    background-color: #754600;
+    font-weight: bold;
+    border-radius: 5px;
+
+    margin: 20px;
+    padding: 20px;
+
+    color: #fbfbfb;
+    border: none;
+
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.container input.btt:hover{
+    background-color: #432800;
+}
