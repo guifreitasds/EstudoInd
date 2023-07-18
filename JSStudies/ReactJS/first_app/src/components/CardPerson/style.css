@@ -1,0 +1,24 @@
+.container-card{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    height: 75px;
+    width: 30%;
+    margin: 10px;
+    background-color: #afafaf8a;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+
+
+    color: #754600;
+}
