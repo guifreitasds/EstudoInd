@@ -5,20 +5,43 @@ import { CardPerson } from '../../components/cardPerson'
 
 export default function Home() {
   const [name, setName] = useState('')
+  const [names, setNames] = useState([])
 
   function handleNameChange(name) {
     setName(name);
+  }
+
+  function handleAddPerson() {
+    const newPerson = {
+      name: name,
+      time: new Date().toLocaleTimeString("pt-br", {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      })
+    }
+
+    setNames(prevState => [...prevState, newPerson])
   }
 
   return (
     <div className='container'>
       <h1>App de lista de Presença</h1>
       <input type="text" placeholder='Digite' className='txt' onChange={e => handleNameChange(e.target.value)}/>
-      <input type="submit" value="Enviar" className='btt'/>
+      <input type="submit" value="Adicionar" className='btt' onClick={handleAddPerson} autoFocus/>
 
-      <CardPerson name={name} time="10:20:40"/>
-      <CardPerson name="Rodrigo Gonçalves" time="10:25:10"/>
-      <CardPerson name="Carlos Alberto" time="11:05:38"/>
+      {
+        names.map(person => (
+        <CardPerson
+          key={person.time}
+          name={person.name} 
+          time={person.time}
+        />
+        )
+        )
+        
+      }
+      
     </div>
   )
 }
