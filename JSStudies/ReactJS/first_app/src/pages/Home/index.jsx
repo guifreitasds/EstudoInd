@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../../styles/global.css'
 import './styles.css'
 import { CardPerson } from '../../components/cardPerson'
+import { HomeHeader } from '../../components/HomeHeader'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -26,7 +27,11 @@ export default function Home() {
 
   return (
     <div className='container'>
-      <h1>App de lista de Presença</h1>
+      <HomeHeader
+        title="Lista de Chamada"
+        name="Guilherme"
+        src="https://github.com/guifreitasds.png"
+      />
       <input type="text" placeholder='Digite' className='txt' onChange={e => handleNameChange(e.target.value)}/>
       <input type="submit" value="Adicionar" className='btt' onClick={handleAddPerson} autoFocus/>
 
