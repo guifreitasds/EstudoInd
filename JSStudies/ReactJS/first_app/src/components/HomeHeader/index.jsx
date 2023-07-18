@@ -2,6 +2,7 @@ import './style.css'
 
 export function HomeHeader(props){
 
+    
     return(
         <header>
             <h1>{props.title}</h1>
