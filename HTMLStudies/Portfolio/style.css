@@ -119,6 +119,17 @@ p.techsparap{
     text-transform: uppercase;
 }
 
+div.titlefromdiv{
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.titlefromdiv > img{
+    width: 30px;
+    margin-left: 10px;
+}
+
 h1{
     margin-left: 15px;
 }
