@@ -1,0 +1,38 @@
+*{
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+
+    --font-main: 'Merriweather Sans', sans-serif;
+}
+main{
+    display: flex;
+}
+
+div.imgmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.imgmain>img{
+    width: 250px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+div.imgmain>p{
+    display: flex;
+
+    justify-content: center;
+
+    width: 250px;
+    background-color: #302F3D;
+    color: white;
+    font-family: var(--font-main);
+    font-size: 10px;
+}
+
+div.textmain{
+
+}
