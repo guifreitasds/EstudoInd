@@ -1,6 +1,13 @@
 import './style.css'
+import React from 'react'
 
-export function HomeHeader(props){
+type HomeProps = {
+    title: string;
+    name: string;
+    src: string;
+}
+
+export function HomeHeader(props: HomeProps){
 
     
     return(

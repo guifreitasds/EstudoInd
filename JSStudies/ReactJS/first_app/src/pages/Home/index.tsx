@@ -1,16 +1,26 @@
 import { useEffect, useState } from 'react'
 import '../../styles/global.css'
 import './styles.css'
-import { CardPerson } from '../../components/cardPerson'
+import { CardPerson, CardProps } from '../../components/CardPerson'
 import { HomeHeader } from '../../components/HomeHeader'
+
+type ProfileResponse = {
+  name: string;
+  avatar_url: string;
+}
+
+type User = {
+  name:string;
+  avatar: string;
+}
 
 export default function Home() {
   const [name, setName] = useState('')
-  const [names, setNames] = useState([])
+  const [names, setNames] = useState<CardProps[]>([])
 
-  const [user, setUser] = useState({name: '', avatar: ''})
+  const [user, setUser] = useState<User>({} as User)
 
-  function handleNameChange(name) {
+  function handleNameChange(name: string) {
     setName(name);
   }
 
@@ -28,14 +38,18 @@ export default function Home() {
   }
 
   useEffect(()=>{
-    // corpo useeffect
-    console.log("entrou")
-    fetch("https://api.github.com/users/guifreitasds")
-      .then(response => response.json())
-      .then(data => setUser({
+
+    async function fetchData() {
+      const response = await fetch("https://api.github.com/users/guifreitasds")
+      const data = await response.json() as ProfileResponse;
+
+      setUser({
         name: data.name,
         avatar: data.avatar_url
-      }))
+      })
+    }
+
+    fetchData()
   }, [])
   return (
     <div className='container'>

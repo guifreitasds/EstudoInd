@@ -1,6 +1,11 @@
 import './style.css'
 
-export function CardPerson(props) {
+export type CardProps = {
+    name: string;
+    time: string;
+}
+
+export function CardPerson(props: CardProps) {
     
     return(
         <div className='container-card'>
