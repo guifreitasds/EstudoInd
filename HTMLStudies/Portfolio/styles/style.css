@@ -28,7 +28,7 @@ nav{
     width: auto;
     border-bottom: 1px solid #ffffff29;
 }
-nav > a{
+nav > a, div.sites > a{
     color: #837e9f80;
     padding: 10px;
     border-radius: 5px;
@@ -36,7 +36,7 @@ nav > a{
     font-size: 1em;
 }
 
-nav > a:hover{
+nav > a:hover, div.sites > a:hover{
     color: var(--text-color);
     background-color: var(--body-bg-color);
     transition: 100ms ease-in-out;
