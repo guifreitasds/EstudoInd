@@ -60,6 +60,9 @@ div.imgmain>p{
 
 div.textmain{
     width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -88,4 +91,34 @@ div.textmain>p{
 span{
 
     font-size: 70px;
+}
+
+div.textmain > a {
+
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+
+    background-color: #CB92B1;
+
+    color: var(--body-bg-color);
+    font-family: var(--font-main);
+    text-decoration: none;
+
+    transition: 200ms ease-in-out;
+
+    border-radius: 5px;
+}
+
+div.textmain > a:hover{
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+}
+
+a>img{
+    width: 40px;
+    margin-left: 10px;
 }
