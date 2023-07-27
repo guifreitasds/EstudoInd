@@ -1,0 +1,24 @@
+*{
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+
+    --font-main: 'Merriweather Sans', sans-serif;
+}
+
+article.project{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    margin-top: 50px;
+    width: 90%;
+    height: 30vh;
+
+    color: var(--text-color);
+    font-family: var(--font-main);
+
+    background-color: #302F3D;
+}
