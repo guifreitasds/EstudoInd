@@ -14,7 +14,7 @@ main{
 
 h1.titlemain{
 
-    margin-top: 100px;
+    margin-top: 75px;
     font-size: 5em;
     font-family: var(--font-main);
 
@@ -37,7 +37,7 @@ div.imgmain{
 
 div.imgmain>img{
     width: 350px;
-    border-radius: 70px 70px 0px 0px;
+    border-radius: 150px 150px 0px 0px;
 }
 
 div.imgmain>p{
@@ -59,6 +59,7 @@ div.imgmain>p{
 }
 
 div.textmain{
+    margin-top: 30px;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -78,12 +79,12 @@ div.textmain>h2{
 
 div.textmain>p{
 
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 1.5px;
     line-height: 2em;
     font-family: var(--font-main);
     margin-top: 20px;
-    color: var(--text-color);
+    color: #837e9f9e
 
 
 }
