@@ -36,9 +36,10 @@ function getCommits(repo) {
       .catch((e) => console.log(e));
       setTimeout(()=>{
         let seecommits = document.createElement('div')
-        seecommits.innerHTML = `<a class="seecommits" href="https://github.com/guifreitasds/${repo}/commits/main" target="_blank">See all commits</a>`
+        seecommits.classList.add("commitsfooter")
+        seecommits.innerHTML = `<a class="seecommits" href="https://github.com/guifreitasds/${repo}/commits/main" target="_blank">See all commits →</a>`
         divcommits.appendChild(seecommits)
 
-      }, 500)
+      }, 600)
 
 }

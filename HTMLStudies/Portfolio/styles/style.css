@@ -349,10 +349,31 @@ li{
 a.seecommits{
     color: var(--text-color);
     text-decoration: none;
-    transition: 100ms ease-out;
+    transition: 200ms ease-out;
+
 }
 
 a.seecommits:hover{
     text-decoration: underline;
-    font-size: 1.2rem;
+}
+
+div.commitsfooter{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+
+    width: 58vw;
+}
+
+footer{
+    
+    display: flex;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    color: var(--text-color);
+
+    justify-content: center;
+    padding: 1.5rem;
 }
