@@ -3,33 +3,35 @@
 ## A to-do list with a simple database, using models and views concepts.
 
 
-# Clone este repositório
+# Running the project
+
+### Clone this repo
 $ git clone <https://github.com/guifreitasds/EstudoInd>
 
-# Acesse a pasta do projeto no terminal/cmd
+### Go to the project folder
 $ cd pythonstudies/django_todolist
 
 
-# Crie seu ambiente python
-$ python -m venv <nome_do_env>
+### Create your pythonvenv
+$ python -m venv <env_name>
 
-# Ative seu ambiente python
+### Activate your venv
 $ source <nome_do_env>/scripts(Windows) ou bin(MacOS)/activate
 
-# Execute a aplicação em modo de desenvolvimento
+### Execute the app in dev mode
 $ python manage.py runserver
 
-# O servidor inciará na porta:8000 - acesse <http://localhost:8000>
+### The server will start at port:8000 - go to <http://localhost:8000>
 
-### 🛠 Tecnologias
+### 🛠 Techs
 
-As seguintes ferramentas foram usadas na construção do projeto:
+The following techs were used to make this project:
 
 - [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
 - [SQLite3](https://docs.python.org/3/library/sqlite3.html)
 
-### Autor
+### Author
 ---
 
 <a href="https://github.com/guifreitasds">
@@ -38,7 +40,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Guilherme Freitas</b></sub></a> <a href="https://github.com/guifreitasds" title="Rocketseat">🚀</a>
 
 
-Feito com ❤️ por Guilherme Freitas 👋🏽 Entre em contato!
+Made with ❤️ by Guilherme Freitas 👋🏽 Contact me!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Guilherme-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilherme-freitas-90209a233/)](https://www.linkedin.com/in/guilherme-freitas-90209a233/) 
 [![Gmail Badge](https://img.shields.io/badge/-guilhermefsantos9@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guilhermefsantos9@gmail.com)](mailto:guilhermefsantos9@gmail.com)
