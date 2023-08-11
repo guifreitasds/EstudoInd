@@ -13,9 +13,25 @@
     --font-main: 'Merriweather Sans', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--body-bg-color);
 }
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-track{
+    background: #22212C;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #302F3D;   
+    border-radius: 20px;       
+    border: 3.5px solid #22212C;  
+  }
 
 nav{
 
