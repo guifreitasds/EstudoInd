@@ -33,11 +33,13 @@ div.imgmain{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 
 div.imgmain>img{
-    width: 350px;
-    border-radius: 150px 150px 0px 0px;
+    width: 410px;
+    height: 300px;
+    border-radius: 60px 60px 0px 0px;
 }
 
 div.imgmain>p{
@@ -45,7 +47,7 @@ div.imgmain>p{
 
     justify-content: center;
 
-    width: 350px;
+    width: 410px;
 
     padding: 10px;
 
