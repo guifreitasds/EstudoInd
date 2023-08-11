@@ -1,6 +1,6 @@
 # TO-DO LIST w/ Django
 
-## A to-do list with a simple database, using models and views concepts.
+### A to-do list with a simple database, using models and views concepts.
 
 
 # Running the project
