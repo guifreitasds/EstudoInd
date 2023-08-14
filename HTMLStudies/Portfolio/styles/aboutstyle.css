@@ -37,7 +37,7 @@ div.imgmain{
 }
 
 div.imgmain>img{
-    width: 410px;
+    width: 430px;
     height: 300px;
     border-radius: 60px 60px 0px 0px;
 }
@@ -47,7 +47,7 @@ div.imgmain>p{
 
     justify-content: center;
 
-    width: 410px;
+    width: 430px;
 
     padding: 10px;
 

@@ -39,6 +39,14 @@
     div.posts-header{
         width: 80vw;
     }
+
+    a.commit-one{
+        width: 90vw;
+    }
+
+    div.commitsfooter{
+        width: 90vw;
+    }
 }
 
 /*

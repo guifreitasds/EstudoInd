@@ -54,7 +54,7 @@ article.project>h1{
 }
 
 .wrapproject:hover img{
-    filter: brightness(87%);
+    filter: brightness(90%);
     cursor: pointer;
     transition: all 400ms ease-in-out;
     scale: 110%;
