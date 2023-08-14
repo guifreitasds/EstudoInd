@@ -1,4 +1,4 @@
-@media screen and (min-width:100px) and (max-width: 900px) {
+@media screen and (min-width:320px) and (max-width: 520px) {
     main{
         display: block;
         margin: auto;
@@ -8,9 +8,13 @@
         flex-direction: column;
         align-items: center;
     }
+    aside > div.exp, div.sites, div.techs, div.profile, div.edu{
+        width: 90vw;
+    }
 
     section{
         margin-top: 50px;
+        margin-left: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,3 +40,12 @@
         width: 80vw;
     }
 }
+
+/*
+    Tablet: 520px - 768px
+
+    Laptops 769px - 1024px
+
+    large screeens 1025px - 1200px
+*/
+
