@@ -18,6 +18,9 @@ $ python -m venv <env_name>
 ### Activate your venv
 $ source <nome_do_env>/scripts(Windows) ou bin(MacOS)/activate
 
+### Install the packages
+$ pip install -r requirements.txt
+
 ### Execute the app in dev mode
 $ python manage.py runserver
 
