@@ -38,8 +38,8 @@ article.project>h1{
 
 .wrapproject{
     overflow: hidden;
-    width: 1000px;
-    height: 250px;
+    width: 65vw;
+    height: 34vh;
     border-radius: 10px;
 }
 .imgproject{
@@ -58,6 +58,4 @@ article.project>h1{
     cursor: pointer;
     transition: all 400ms ease-in-out;
     scale: 110%;
-    height: 253px;
-    width: 1003px;
 }
