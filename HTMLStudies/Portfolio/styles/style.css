@@ -198,7 +198,7 @@ p.atvs{
 
 
 section{
-    margin-left: 5%;
+    margin-left: 3vw;
 }
 
 
@@ -227,7 +227,7 @@ div.projects{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2.5%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 a.project-one{
@@ -243,7 +243,7 @@ a.project-one{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--bg-cards);
-    width: 31vw;
+    width: 29vw;
 
     transition: 100ms ease-in-out;
     
