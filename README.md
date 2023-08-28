@@ -12,6 +12,6 @@
   * Mobile Dev Studies
     > With the basic of Dart Language and React Native projects
   * Python Studies
-    > Since the basic to the advanced with projects
+    > Since the basic to the advanced with projects connecting to databases
   * SQL Studies
     > With the SQL commands 
