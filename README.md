@@ -4,7 +4,7 @@
 - Here you'll find:
 
   * HTML Studies
-    > With Challenges and websites made by myself
+    > With Challenges and websites made by myself, plus my portfolio
   * JavaScript Studies
     > With basic fundamentals, projects and learning about Node
   * Java Studies
