@@ -1,6 +1,6 @@
 # TO-DO LIST w/ Django and React
 
-### A to-do list with a database, using models and views concepts. And all the front-end are make in React.JS and connected using JavaScript
+### A to-do list with a database, using models and views concepts. And all the front-end are make in React.JS and connected using build and django concepts.
 
 
 # Running the project
@@ -9,8 +9,16 @@
 $ git clone <https://github.com/guifreitasds/EstudoInd>
 
 ### Go to the project folder
-$ cd pythonstudies/django_todolist
+$ cd pythonstudies/todo_drf
 
+### Go to frontend folder
+$ cd frontend
+
+### Install dependencies
+$ npm i
+
+### Run front end build
+$ npm run build
 
 ### Create your pythonvenv
 $ python -m venv <env_name>
