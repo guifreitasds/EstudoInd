@@ -38,10 +38,10 @@ $ python manage.py runserver
 
 The following techs were used to make this project:
 
-- [Python](https://www.python.org/)
-- [React.JS](https://react.dev/)
-- [Django](https://www.djangoproject.com/)
-- [SQLite3](https://docs.python.org/3/library/sqlite3.html)
+* [Python](https://www.python.org/)
+* [React.JS](https://react.dev/)
+* [Django](https://www.djangoproject.com/)
+* [SQLite3](https://docs.python.org/3/library/sqlite3.html)
 
 ### Author
 ---
