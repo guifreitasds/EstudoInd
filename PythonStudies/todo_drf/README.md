@@ -52,7 +52,7 @@ The following techs were used to make this project:
  <sub><b>Guilherme Freitas</b></sub></a> <a href="https://github.com/guifreitasds" title="Rocketseat">🚀</a>
 
 
-Made with ❤️ by Guilherme Freitas 👋🏽 Contact me!
+_Made with ❤️ by __Guilherme Freitas__ 👋🏽 Contact me!_
 
 [![Linkedin Badge](https://img.shields.io/badge/-Guilherme-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilherme-freitas-90209a233/)](https://www.linkedin.com/in/guilherme-freitas-90209a233/) 
 [![Gmail Badge](https://img.shields.io/badge/-guilhermefsantos9@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guilhermefsantos9@gmail.com)](mailto:guilhermefsantos9@gmail.com)
